@@ -1,0 +1,131 @@
+#playSection
+{
+   display: inline;
+}
+#scoreSection, #dexSection, #masterSection
+{
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+}
+#scoreArea
+{
+   display: flex;
+   justify-content: space-around;
+}
+#answerArea
+{
+   display: grid;
+   grid-template: 1fr 1fr
+                / 1fr 1fr;
+}
+#continueArea
+{
+   display: flex;
+   justify-content: center;
+   margin: 10px;
+}
+#audioArea
+{
+   margin: 10px;
+}
+#unlockedArea, .gens
+{
+   max-width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 115px;
+}
+#collectionButton
+{
+   display: inline;
+   size: 20px;
+   background-color: rebeccaPurple;
+}
+#totalCollected, #livesArea
+{
+   display: flex;
+   justify-content: center;
+}
+.audioPlayer {
+   width: 100px;
+   height: 100px;
+   --player-button-width: 100px;
+}
+.controls {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   margin-top: 10px;
+}
+.AudioPlayButton {
+   background-color: transparent;
+   border: 0;
+   width: var(--player-button-width);
+   height: var(--player-button-width);
+   cursor: pointer;
+   padding: 0;
+   fill: coral;
+   fill-rule: evenodd;
+}
+.buttons
+{
+   background-color: cornflowerblue;
+   margin: 2px
+}
+.playButtons
+{
+   font-size: 30px;
+   background-color: cornflowerblue;
+   border: 1px;
+   border-radius: 40%;
+   margin-top: 15px;
+}
+.images, .shinies, #gif
+{
+   max-width: 100%;
+   max-height: 100%;
+}
+.header,p
+{
+   background: rgb(33,33,33);
+   width: 100%;
+   height: 50px;
+   line-height: 50px;
+   margin-top: 10px;
+   font-size: 30px;
+   color: gold;
+   padding-left: 10px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;  
+}
+body
+{
+   background-color: rgb(33,33,33);
+}
+h1
+{
+   font-size: 30px;
+   color: gold;
+}
+h2
+{
+   font-size: 18px;
+   color: gold;
+   text-shadow: -2px 0 blue,
+                 0 2px blue,
+                 2px 0 blue,
+                0 -2px blue;
+}
+h3
+{
+   font-size: 22px;
+   color: gold;
+}
+h4, label
+{
+   color: gold;
+}

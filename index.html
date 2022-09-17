@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matthew - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    .moreTab {display:none}
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 20px;
+    }
+    title {
+    display: none;
+    }
+    </style>
+  </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://mattjovaniportfolio.w3spaces.com/Images/profile_pic.jpg?bypass-cache=10977698" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Matthew Jovani</b></h4>
+    <p class="w3-text-grey">programmer</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.linkedin.com/in/matthew-jovani-84756922a/" class="fa fa-linkedin w3-hover-opacity"></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <h4><b>About Me</b></h4>
+    <p>I recently received my diploma from UQAM for my Certificate in Computer Science and Software Development. I am looking for work in this domaine.<br>
+    I have created this portfolio to show you some of the programming skills that I have learned. Whether it's web programming, database programming or videogame programming.<br>
+    I am a gaymer and a Pokéfan so I enjoy exploring and practicing my programming skills while creating Pokémon themed things.</p>
+    
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="https://mattjovaniportfolio.w3spaces.com/Images/profile_pic.jpg?bypass-cache=10977698" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-display-container w3-margin-bottom">
+      <a href="./PokemonCries/PokemonCries.html"><img src="https://mattjovaniportfolio.w3spaces.com/Images/PokemonCriesImage.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" ></a>
+    <div class="w3-display-bottomright w3-display-hover w3-small">
+      <button class="w3-button w3-black w3-animate-bottom" onclick="openBlock('morePkmnCries',0)">more</button>
+    </div>
+      <div class="w3-container w3-white w3-margin-bottom">
+        <p><b>Pokemon Cries - written in HTML/CSS/Javascript</b></p>
+        <p>This was a little side project that I have coded during my free time when on the go.<br>In this game you must identify the Pokémon by listening to it's cry.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-display-container w3-margin-bottom">
+      <img src="https://mattjovaniportfolio.w3spaces.com/Images/UnderConstructionPokemonTripleTriadImage.jpg" alt="Norway" style="width:100%">
+    <div class="w3-display-bottomright w3-display-hover w3-small">
+      <button class="w3-button w3-black w3-animate-bottom" onclick="openBlock('moreTrplTriad',2)">more</button>
+    </div>
+      <div class="w3-container w3-white w3-margin-bottom">
+        <p><small><i>(under construction) </i></small><b> Triple Triad - written in C++</b></p>
+        <p>A project I am currently working on after learning how to use Unreal Engine on my own from online courses.<br>It's a remake of Final Fantasy VIII's Triple Triad card game but with a Pokémon twist.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-display-container w3-margin-bottom">
+      <img src="https://mattjovaniportfolio.w3spaces.com/Images/PokemonScoreStatsImage.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white w3-margin-bottom">
+        <p><small><i>(under construction) </i></small><b> Game Scores & Stats - written in SQL</b></p>
+        <p>A challenge I have set for myself to store all the players' scores and stats.<br>Highscores, longest streaks, number of shinies obtained. You will see all of that here</p>
+      </div>
+    </div>
+  </div>
+  
+<!--"More info" modals-->
+<!--Pokemon Cries modal-->
+<div id="morePkmnCries" class="w3-modal">
+ <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  <header class="w3-container w3-blue"> 
+   <span onclick="document.getElementById('morePkmnCries').style.display='none'" 
+   class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+   <h2>Pokemon Cries - written in HTML/CSS/Javascript</h2>
+  </header>
+
+  <div class="w3-bar w3-border-bottom">
+   <button class="tablink w3-bar-item w3-button" onclick="changeTab(event, 'infoPkmnCries')">About Pokemon Cries</button>
+   <button class="tablink w3-bar-item w3-button" onclick="changeTab(event, 'codePkmnCries')">Snippet of the code</button>
+  </div>
+
+  <div id="infoPkmnCries" class="w3-container moreTab">
+   <h3>About Pokemon Cries</h3>
+   <p>The player must listen to a Pokemon's cry and try to identify which Pokemon it is. Answering correctly unlocks its shiny on its next appearance(s). Guessing incorrectly reduces your lives by 1. Be careful! You only have 5.</p>
+   <p>After losing all your lives you get to see which shinies you have unlocked and you can also see your collection. Collect them all!</p>
+  </div>
+
+  <div id="codePkmnCries" class="w3-container moreTab">
+   <pre>
+     <code>
+      <p>//Verifies if the answer selected is correct<br>
+        function checkAnswer(buttonClicked, buttonAnswer){
+          if (buttonAnswer == realAnswer.name.toUpperCase()){
+            score ++;
+            document.getElementById("scoreDisplay").innerHTML = "Score: " + score;
+            buttonClicked.style.background = 'radial-gradient(closest-side, lightgreen, green, darkgreen)';
+            realAnswer.img = realAnswer.shiny;
+            let allButtons = document.querySelectorAll(".buttons");
+            allButtons.forEach(button =>{
+              if(button.childNodes[1].innerHTML != realAnswer.name.toUpperCase())
+                button.style.opacity = 0.5;
+            });
+            updateCollection();
+          } else {
+            let allButtons = document.querySelectorAll(".buttons");
+            allButtons.forEach(button =>{
+              if(button.childNodes[1].innerHTML == realAnswer.name.toUpperCase()){
+                button.style.background = 'radial-gradient(closest-side, red, black, lightgreen)';
+              } else {
+                button.style.opacity = 0.5;
+              }
+            });
+            buttonClicked.style.background = 'radial-gradient(closest-side, lightgreen, black, darkred)';
+            buttonClicked.style.opacity = 0.5;
+            livesLeft--;
+            updateLives();
+          }
+          disableButtons(true);
+          displayContButton("show");
+        }
+      </p>
+     </code>
+   </pre>
+  </div>
+
+ <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-button w3-right w3-white w3-border" 
+   onclick="document.getElementById('morePkmnCries').style.display='none'">Close</button>
+  </div> 
+ </div>
+</div>
+
+<!--Triple Triad Modal-->
+<div id="moreTrplTriad" class="w3-modal">
+ <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  <header class="w3-container w3-blue"> 
+   <span onclick="document.getElementById('moreTrplTriad').style.display='none'" 
+   class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+   <h2>Triple Triad - written in C++</h2>
+  </header>
+
+  <div class="w3-bar w3-border-bottom">
+   <button class="tablink w3-bar-item w3-button" onclick="changeTab(event, 'infoTrplTriad')">About Triple Triad</button>
+   <button class="tablink w3-bar-item w3-button" onclick="changeTab(event, 'codeTrplTriad')">Snippet of the code</button>
+  </div>
+
+  <div id="infoTrplTriad" class="w3-container moreTab">
+   <h3>About Triple Triad</h3>
+   <p>Final Fantasy VIII's Triple Triad but with Pokemon. Each player starts with 5 cards that contain different numbers from 0 to 9(+A) in each direction (up, down, left, right). Each player takes turns placing a card in the 3x3 grid.</p>
+   <p>After placing a card: if the number on the adjecent card(s) is lower than the number on the played card, the adjecent card(s) gets flipped over. After all 9 squares are filled, the player with the most cards flipped to their colour wins.</p>
+  </div>
+
+  <div id="codeTrplTriad" class="w3-container moreTab">
+   <pre>
+     <code>
+      <p>
+      </p>
+     </code>
+   </pre>
+  </div>
+
+ <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-button w3-right w3-white w3-border" 
+   onclick="document.getElementById('moreTrplTriad').style.display='none'">Close</button>
+  </div> 
+ </div>
+</div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>matthewjovani@gmail.com</p>
+      </div>
+      <div id="tes" class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Montreal, Canada</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>438-884-3418</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+hljs.highlightAll();
+var modalPC = document.getElementById('morePkmnCries');
+var modalTT = document.getElementById('moreTrplTriad');
+
+window.onclick = function(event) {
+  if (event.target == modalPC) {
+    modalPC.style.display = "none";
+  }
+  if (event.target == modalTT) {
+    modalTT.style.display = "none";
+  }
+}
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function openBlock(block, i) {
+  document.getElementsByClassName("tablink")[i].click();
+  document.getElementById(block).style.display='block';
+}
+
+function changeTab(evt, tabClicked) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("moreTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(tabClicked).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+</script>
+
+</body>
+</html>

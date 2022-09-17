@@ -1,0 +1,108 @@
+<html>
+<head>
+   <link rel="stylesheet" href="PokemonCries.css">
+</head>
+
+<body>
+<section id="playSection">
+<div id="scoreArea">
+<h4 id="scoreDisplay">Score: 0</h4>
+<h4 id="hiScoreDisplay"></h4>
+</div>
+<div id="livesArea"></div>
+<div id="answerArea">
+<button id="button1" class="buttons" type="button" onclick="checkAnswer(this, this.childNodes[1].innerHTML)"><img id="image1" class="images" src=""><h2 id="answer1"></h2>
+</button>
+<button id="button2" class="buttons" type="button" onclick="checkAnswer(this, this.childNodes[1].innerHTML)"><img id="image2" class="images" src=""><h2 id="answer2"></h2>
+</button>
+<button id="button3" class="buttons" type="button" onclick="checkAnswer(this, this.childNodes[1].innerHTML)"><img id="image3" class="images" src=""><h2 id="answer3"></h2>
+</button>
+<button id="button4" class="buttons" type="button"  onclick="checkAnswer(this, this.childNodes[1].innerHTML)"><img id="image4" class="images" src=""><h2 id="answer4"></h2>
+</button>
+</div>
+<div id="continueArea">
+   <div class="audioPlayer">
+      <audio id="audioArea" src=""></audio>
+      <div class="controls">
+        <button class="audioPlayButton" onclick="document.getElementById('audioArea').play()">
+          <svg viewBox="0 0 20 20">
+      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+    </svg>
+        </button>
+    </div>
+    </div>
+<button id="continueButton" class="playButtons" onclick="loadPokemon()">Continue</button>
+</div>
+</div>
+</section>
+
+<section id="scoreSection">
+<h1>Out of lives!</h1>
+<h3>Your score is: <span id="finalScore"></span></h3>
+<h4>You have unlocked these shiny Pokemon!</h4>
+<div id="unlockedArea">
+</div>
+<button id="collectionButton" class="playButtons" onclick="viewCollection()">View Collection</button>
+<button class="playButtons" onclick="playAgain()">Play Again</button>
+</section>
+
+<section id="dexSection">
+<div class="header">
+<p>Kanto</p>
+</div>
+<div id="gen1" class="gens">
+</div>
+<div class="header">
+<p>Johto</p>
+</div>
+<div id="gen2" class="gens">
+</div>
+<div class="header">
+<p>Hoenn</p>
+</div>
+<div id="gen3" class="gens">
+</div>
+<div class="header">
+<p>Sinnoh</p>
+</div>
+<div id="gen4" class="gens">
+</div>
+<div class="header">
+<p>Unova</p>
+</div>
+<div id="gen5" class="gens">
+</div>
+<div class="header">
+<p>Kalos</p>
+</div>
+<div id="gen6" class="gens">
+</div>
+<div class="header">
+<p>Alola</p>
+</div>
+<div id="gen7" class="gens">
+</div>
+<div class="header">
+<p>Galar</p>
+</div>
+<div id="gen8" class="gens">
+</div>
+<h1 id="totalCollected"></h1>
+<div>
+<input type="checkbox" id="shinybox" name="shinybox">
+<label for="shinybox">Omit these Pokemon in the next games</label>
+</div>
+<button class="playButtons" onclick="playAgain()">Play Again</button>
+</section>
+
+<section id="masterSection">
+<h1>Congratulations!</h1><h3>You're a Pokemon master!</h3>
+<img id="gif" src="https://64.media.tumblr.com/309ba57368afe609826d76eaafc88336/tumblr_pcqgasr5B91xnfihso1_540.gifv">
+<h3>All 905 Pokemon obtained!</h3>
+<h4>Coming soon: Hard mode!</h4>
+</section>
+</body>
+
+<script src="PokemonList.js"></script>
+<script src="PokemonCries.js"></script>
+</html>
