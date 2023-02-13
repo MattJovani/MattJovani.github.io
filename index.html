@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    .skillBtn {w3-btn w3-black w3-round-xlarge}
     .moreTab {display:none}
     pre code {
       background-color: #eee;
@@ -36,7 +37,8 @@
     <p class="w3-text-grey">programmer</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>SKILLS</a>
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
@@ -51,13 +53,19 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <h4><b>About Me</b></h4>
+  <div class="w3-row-padding w3-padding-16">
+    <h4 id="about"><b>About Me</b></h4>
     <p>I recently received my diploma from UQAM for my Certificate in Computer Science and Software Development. I am looking for work in this domaine.<br>
     I have created this portfolio to show you some of the programming skills that I have learned. Whether it's web programming, database programming or videogame programming.<br>
     I am a gaymer and a Pokéfan so I enjoy exploring and practicing my programming skills while creating Pokémon themed things.</p>
-    <h4><b>Skills</b></h4>
-    <p>C, C++, Java, JavaScript, HTML</p>
+    <h4 id="skills"><b>Skills</b></h4>
+    <p>
+      <button class="w3-btn w3-black w3-round-xlarge" >C</button>
+      <button class="skillBtn">C++</button>
+      <button class="w3-btn w3-black w3-round-xlarge" >Java</button>
+      <button class="w3-btn w3-black w3-round-xlarge" >JavaScript</button>
+      <button class="w3-btn w3-black w3-round-xlarge" >HTML</button>
+    </p>
     
   <!-- Header -->
   <header id="portfolio">
