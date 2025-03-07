@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,  height=device-height, initial-scale=1.0">
+<link rel="stylesheet" href="Emmas30th.css">
+<link rel="stylesheet" href="./spinnerfiles/spinner.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="./spinnerfiles/spinner.js"></script>
+<script src="./Tapple/Disney.js"></script>
+<script src="./Tapple/Wrestling.js"></script>
+<script src="./Tapple/Stm.js"></script>
+<script src="./Tapple/Horror.js"></script>
+<script src="./Tapple/Rupaul.js"></script>
+<script src="./Tapple/Family.js"></script>
+</head>
+
+<body>
+<button id="topSecret" onclick="openFullScreen()">
+TOP<br>SECRET</button>
+
+<div id="counterDiv">
+<p id="counter"></p>
+</div>
+
+<div id="div0">
+<p id="introMsg">Ahh! Agent Pheonix! I knew you'd pull through! The telekinetic implant in your head was corrupted and you were being mind controlled by Zor. We had no choice but to remove it. Sadly you will no longer be able to use telekinesis. Because you have been using it for so long your brain has trouble functioning without it. We have installed a chip in its place which acts like a crutch to stabilize your brain but we need to adjust it to your brain's current age...and I can see in your records that it's your 30th birthday! Happy birthday Emm- <br>-ahem I mean...Agent Phoenix! Now let's get you through 30 micro missions to program this chip correctly! We'll start easy.</p>
+</div>
+
+<div id="div1" class="divNumbers">
+What's the opposite of Top Secret?
+</div>
+
+<div id="div2" class="divNumbers">
+
+</div>
+
+<div id="div3" class="divNumbers">
+What's the golden rule?
+</div>
+
+<div id="div4" class="divNumbers">
+
+</div>
+
+<div id="div5" class="divNumbers">
+tapple disney
+</div>
+
+<div id="div6" class="divNumbers">
+If someone says they love you to the moon and back, how many cups of sugar equals their love?
+</div>
+
+<div id="div7" class="divNumbers">
+
+</div>
+
+<div id="div8" class="divNumbers">
+
+</div>
+
+<div id="div9" class="divNumbers">
+
+</div>
+
+<div id="div10" class="divNumbers">
+tapple wrestling
+</div>
+
+<div id="div11" class="divNumbers"> 
+Until I am measured, I am not known. Yet how you miss me, when I have flown. What am I?
+</div>
+
+<div id="div12" class="divNumbers">
+In the song Hotdog by Limp Bizkit, how many fucks are said? <span id="hotdog"><br>That was too easy, the answer was given in the song. let's separate the fucks:<br><span id="fuckline"><span id="fuck" class="fucks">fuck(s)</span><span id="fucked" class="fucks">fucked <span class="invis">• • • •</span></span><span id="totalfucks" class="fucks">total <span class="invis">• • • •</span></span></span><span id="arrowline"><span><span class="invis">• </span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓ <span class="invis">••</span></span></span></span>
+</div>
+
+<div id="div13" class="divNumbers">
+
+</div>
+
+<div id="div14" class="divNumbers">
+
+</div>
+
+<div id="div15" class="divNumbers">
+tapple montreal metro stations
+</div>
+
+<div id="div16" class="divNumbers">
+
+</div>
+
+<div id="div17" class="divNumbers">
+
+</div>
+
+<div id="div18" class="divNumbers">
+Have you ever counted how many circle holes (fully or partially) there are on the baby gate for your furry companion? ...I have.
+</div>
+
+<div id="div19" class="divNumbers">
+
+</div>
+
+<div id="div20" class="divNumbers">
+tapple horror movies
+</div>
+
+<div id="div21" class="divNumbers">
+What do these 3 songs have in common?<br>
+<br>•Mambo #5
+<br>•California Gurls.
+<br>•Hands To Myself
+</div>
+
+<div id="div22" class="divNumbers">
+
+</div>
+
+<div id="div23" class="divNumbers">
+
+</div>
+
+<div id="div24" class="divNumbers">
+
+</div>
+
+<div id="div25" class="divNumbers">
+tapple rupaul
+</div>
+
+<div id="div26" class="divNumbers">
+
+</div>
+
+<div id="div27" class="divNumbers">
+What's lighter than a feather but difficult to hold for more than just a few minutes?
+</div>
+
+<div id="div28" class="divNumbers">
+In the song: Vicinity of Obscenity. The number of times "banana" is said multiplied by the number of times "terracotta" is said multiplied by the number of times "pie" is said. (Google is forbidden but a calculator is allowed)
+</div>
+
+<div id="div29" class="divNumbers">
+
+</div>
+
+<div id="div30" class="divNumbers">
+tapple family
+</div>
+</body>
+
+<footer>
+<div id="ticker">
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div id="result"></div>
+</div>
+<form id="typing" onkeydown="return event.keyCode != 13">
+<input id="inputAnswer" placeholder="Enter your answer here" onkeyup="verifyText()"></input>
+</form>
+<div id="tapple">
+<button id="tappleButton" disabled="true"></button>
+<input id="tappleA" class="tappleLetters" onkeyup="verifyTapple('A', 1, this, this.value)" placeholder="A"></input>
+<input id="tappleB" class="tappleLetters" onkeyup="verifyTapple('B', 2, this, this.value)" placeholder="B"></input>
+<input id="tappleC" class="tappleLetters" onkeyup="verifyTapple('C', 3, this, this.value)" placeholder="C"></input>
+<input id="tappleD" class="tappleLetters" onkeyup="verifyTapple('D', 4, this, this.value)" placeholder="D"></input>
+<input id="tappleE" class="tappleLetters" onkeyup="verifyTapple('E', 5, this, this.value)" placeholder="E"></input>
+<input id="tappleF" class="tappleLetters" onkeyup="verifyTapple('F', 6, this, this.value)" placeholder="F"></input>
+<input id="tappleG" class="tappleLetters" onkeyup="verifyTapple('G', 7, this, this.value)" placeholder="G"></input>
+<input id="tappleH" class="tappleLetters" onkeyup="verifyTapple('H', 8, this, this.value)" placeholder="H"></input>
+<input id="tappleI" class="tappleLetters" onkeyup="verifyTapple('I', 9, this, this.value)" placeholder="I"></input>
+<input id="tappleJ" class="tappleLetters" onkeyup="verifyTapple('J', 10, this, this.value)" placeholder="J"></input>
+<input id="tappleK" class="tappleLetters" onkeyup="verifyTapple('K', 11, this, this.value)" placeholder="K"></input>
+<input id="tappleL" class="tappleLetters" onkeyup="verifyTapple('L', 12, this, this.value)" placeholder="L"></input>
+<input id="tappleM" class="tappleLetters" onkeyup="verifyTapple('M', 13, this, this.value)" placeholder="M"></input>
+<input id="tappleN" class="tappleLetters" onkeyup="verifyTapple('N', 14, this, this.value)" placeholder="N"></input>
+<input id="tappleO" class="tappleLetters" onkeyup="verifyTapple('O', 15, this, this.value)" placeholder="O"></input>
+<input id="tappleP" class="tappleLetters" onkeyup="verifyTapple('P', 16, this, this.value)" placeholder="P"></input>
+<input id="tappleQ" class="tappleLetters bonus" onkeyup="verifyTapple('Q', 17, this, this.value)" placeholder="Q"></input>
+<input id="tappleR" class="tappleLetters" onkeyup="verifyTapple('R', 18, this, this.value)" placeholder="R"></input>
+<input id="tappleS" class="tappleLetters" onkeyup="verifyTapple('S', 19, this, this.value)" placeholder="S"></input>
+<input id="tappleT" class="tappleLetters" onkeyup="verifyTapple('T', 20, this, this.value)" placeholder="T"></input>
+<input id="tappleU" class="tappleLetters bonus" onkeyup="verifyTapple('U', 21, this, this.value)" placeholder="U"></input>
+<input id="tappleV" class="tappleLetters bonus" onkeyup="verifyTapple('V', 22, this, this.value)" placeholder="V"></input>
+<input id="tappleW" class="tappleLetters" onkeyup="verifyTapple('W', 23, this, this.value)" placeholder="W"></input>
+<input id="tappleX" class="tappleLetters bonus" onkeyup="verifyTapple('X', 24, this, this.value)" placeholder="X"></input>
+<input id="tappleY" class="tappleLetters bonus" onkeyup="verifyTapple('Y', 25, this, this.value)" placeholder="Y"></input>
+<input id="tappleZ" class="tappleLetters bonus" onkeyup="verifyTapple('Z', 26, this, this.value)" placeholder="Z"></input>
+</div>
+<br><br>
+<div id="buttonsContainer">
+   <button id="lifeLineButton" onclick="togglePopup('lifeLinePopup')"></button>
+   <button id="nextButton" onclick="nextSlide('div'+(counter-1), 'div'+counter)">Next</button>
+   <div id="lifeLinePopup" class="popup">
+   <button class="lifeLineButtons"></button>
+   <button class="lifeLineButtons"></button>
+   <button class="lifeLineButtons"></button>
+   <button class="lifeLineButtons"></button>
+   </div>
+</div>
+</footer>
+<script src="Emmas30th.js"></script>
+</html>

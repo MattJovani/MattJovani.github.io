@@ -1,0 +1,193 @@
+const stmTapple = [
+    {letter: "A", items: [
+        "acadie",
+        "angrignon",
+        "atwater",
+        "assomption",
+    ]},
+    {letter: "B", items: [
+        "berri uqam",
+        "berri-uqam",
+        "bonaventure",
+        "beaubien",
+        "beaudry",
+    ]},
+    {letter: "C", items: [
+        "cote des neiges",
+        "cote-des-neiges",
+        "côte des neiges",
+        "côte-des-neiges",
+        "de castelnau",
+        "de-castelnau",
+        "cote vertu",
+        "cote-vertu",
+        "côte vertu",
+        "côte-vertu",
+        "du college",
+        "du-college",
+        "du collège",
+        "du-collège",
+        "cote sainte catherine",
+        "cote-sainte-catherine",
+        "côte sainte catherine",
+        "côte-sainte-catherine",
+        "champ de mars",
+        "champ-de-mars",
+        "cremazie",
+        "crémazie",
+        "cartier",
+        "de la concorde",
+        "de-la-concorde",
+        "charlevoix",
+        "cadillac",
+    ]},
+    {letter: "D", items: [
+        "de castelnau",
+        "de-castelnau",
+        "d'iberville",
+        "du college",
+        "du-college",
+        "du collège",
+        "du-collège",
+        "de la savane",
+        "de-la-savane",
+        "de la concorde",
+        "de-la-concorde",
+        "de l'eglise",
+        "de-l'eglise",
+        "de l'église",
+        "de-l'église",
+    ]},
+    {letter: "E", items: [
+        "edouard montpetit",
+        "edouard-montpetit",
+        "édouard montpetit",
+        "édouard-montpetit",
+        "de l'eglise",
+        "de-l'eglise",
+        "de l'église",
+        "de-l'église",
+    ]},
+    {letter: "F", items: [
+        "fabre",
+        "frontenac",
+    ]},
+    {letter: "G", items: [
+        "georges vanier",
+        "georges-vanier",
+        "guy concordia",
+        "guy-concordia",
+    ]},
+    {letter: "H", items: [
+        "henri bourassa",
+        "henri-bourassa",
+        "honore beaugrand",
+        "honore-beaugrand",
+        "honoré beaugrand",
+        "honoré-beaugrand",
+    ]},
+    {letter: "I", items: [
+        "d'iberville",
+    ]},
+    {letter: "J", items: [
+        "jean drapeau",
+        "jean-drapeau",
+        "jean talon",
+        "jean-talon",
+        "jarry",
+        "jolicoeur",
+        "joliette",
+    ]},
+    {letter: "K", items: [
+        
+    ]},
+    {letter: "L", items: [
+        "longueuil",
+        "lionel groulx",
+        "lionel-groulx",
+        "lucien l'allier",
+        "lucien-l'allier",
+        "laurier",
+        "lasalle",
+        "langelier",
+    ]},
+    {letter: "M", items: [
+        "mont royal",
+        "mont-royal",
+        "montmorency",
+        "monk",
+        "mcgill"
+    ]},
+    {letter: "N", items: [
+        "namur",
+    ]},
+    {letter: "O", items: [
+        "outremont",
+    ]},
+    {letter: "P", items: [
+        "parc",
+        "plamondon",
+        "place saint henri",
+        "place-saint-henri",
+        "place d'armes",
+        "place-d'armes",
+        "peel",
+        "place des arts",
+        "place-des-arts",
+        "papineau",
+        "prefontaine",
+        "préfontaine",
+        "pie ix",
+        "pie-ix"
+    ]},
+    {letter: "Q", items: [
+        
+    ]},
+    {letter: "R", items: [
+        "rosemont",
+        "radisson",
+    ]},
+    {letter: "S", items: [
+        "snowdon",
+        "saint michel",
+        "saint-michel",
+        "de la savane",
+        "de-la-savane",
+        "square victoria oaci",
+        "square-victoria-oaci",
+        "sherbrooke",
+        "sauve",
+        "sauvé",
+        "saint laurent",
+        "saint-laurent",
+    ]},
+    {letter: "T", items: [
+        
+    ]},
+    {letter: "U", items: [
+        "universite de montreal",
+        "universite-de-montreal",
+        "université de montréal",
+        "université-de-montréal",
+    ]},
+    {letter: "V", items: [
+        "villa maria",
+        "villa-maria",
+        "vendome",
+        "vendôme",
+        "verdun",
+        "viau",
+    ]},
+    {letter: "W", items: [
+        
+    ]},
+    {letter: "X", items: [
+        
+    ]},
+    {letter: "Y", items: [
+        
+    ]},
+    {letter: "Z", items: [
+        
+    ]},
+]

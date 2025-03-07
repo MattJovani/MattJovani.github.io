@@ -1,0 +1,307 @@
+html,body{
+    background: url(paperbg.jpg);
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+footer{
+   position: fixed;
+   bottom: 0vh;
+}
+#ticker{
+    bottom: 0vh;
+}
+#introMsg{
+    margin-left: 20%;
+    margin-top: 22%;
+}
+#hotdog{
+    display: none;
+    font-size: 4vh;
+}
+#fuckline, #arrowline{
+    display: flex;
+    justify-content: space-between;
+}
+.invis{
+    color: transparent;
+}
+.divNumbers{
+   display: none;
+   font-family: "Lucida Handwriting", cursive;
+   font-weight: 900;
+   font-size: 5vh;
+}
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+button:focus{
+   -webkit-tap-highlight-color: transparent;
+   outline: none ;
+}
+#buttonsContainer{
+   display: flex;
+}
+#nextButton{
+   margin-left: 38vh;
+}
+#lifeLineButton{
+    display: none;
+   background: url(https://static.wikia.nocookie.net/millionaire/images/0/09/Extra_Help.png/revision/latest/thumbnail/width/360/height/450?cb=20240208174957);
+   height: 6vh;
+   width: 10vh;
+   background-size: cover;
+   box-shadow: 0 4.5px #bbb;
+   position: fixed;
+   margin-left: 20vh;
+}
+select{
+   -webkit-appearance: none;
+   text-indent: 33%;
+   font-size: 50px;
+   width: 10vh;
+   aspect-ratio: 3/2;
+   transition: background-color .6s;
+}
+select>option{
+    background-color: #b8e1ba;
+}
+input{
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 0 #2196f3;
+}
+input:focus{
+    outline: none;
+}
+#password{
+   display: none;
+   justify-content: flex-end;
+}
+#typing{
+   display: none;
+   justify-content: center;
+}
+.popup{
+   position: absolute;
+   visibility: hidden;
+   background: rgba(135, 206, 235, 0.95);
+   width: 45vh;
+   height: 75vh;
+   bottom: 55%;
+   margin-left: 3vh;
+}
+#lifeLinePopup{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.lifeLineButtons{
+   width: 12vh;
+   height: 12vh;
+   background: royalblue;
+   opacity: 1 !important;
+}
+#topSecret{
+    position: absolute;
+    z-index: 1;
+    width: 98%;
+    height: 98%;
+    background-color: goldenrod;
+    color: red;
+    font-size: 300%;
+    font-weight: 300%;
+}
+div[disabled]{
+    pointer-events: none;
+    opacity: 0.7;
+}
+#tapple{
+    display: none;
+    position: absolute;
+    bottom: 30vh;
+}
+#tappleButton{
+    position: absolute;
+    z-index: 11;
+    width: 250px;
+    height: 250px;
+    top: -200px;
+    left: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: none;
+    elevation: 0.0;
+    background-color: blue;
+    border-radius: 50%;
+}
+.tappleLetters:not(.bonus){
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    width: 25px;
+    height: 50px;
+    overflow: hidden;
+}
+.bonus{
+    position: absolute;
+    z-index: 12;
+    background-color: magenta;
+    width: 25px;
+    height: 32px;
+    padding-top: 8px;
+}
+.tappleLetters:not(.focusLetters)::placeholder{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.focusLetters::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+#tappleA{
+    top: -231.34px;
+    left: 206.03px;
+    transform: rotate(18deg);
+}
+#tappleB{
+    top: -212.03px;
+    left: 243.94px;
+    transform: rotate(36deg);
+}
+#tappleC{
+    top: -181.94px;
+    left: 274.03px;
+    transform: rotate(54deg);
+}
+#tappleD{
+    top: -144.03px;
+    left: 293.34px;
+    transform: rotate(72deg)
+}
+#tappleE{
+    top: -102px;
+    left: 300px;
+    transform: rotate(90deg);
+}
+#tappleF{
+    top: -59.97px;
+    left: 293.34px;
+    transform: rotate(108deg);
+}
+#tappleG{
+    top: -22.06px;
+    left: 274.03px;
+    transform: rotate(126deg);
+}
+#tappleH{
+    top: 8.03px;
+    left: 243.94px;
+    transform: rotate(144deg);
+}
+#tappleI{
+    top: 27.34px;
+    left: 206.03px;
+    transform: rotate(162deg);
+}
+#tappleJ{
+    top: 34px;
+    left: 164px;
+    transform: rotate(180deg);
+}
+#tappleK{
+    top: 27.34px;
+    left: 121.97px;
+    transform: rotate(198deg);
+}
+#tappleL{
+    top: 8.03px;
+    left: 84.06px;
+    transform: rotate(216deg);
+}
+#tappleM{
+    top: -22.06px;
+    left: 53.97px;
+    transform: rotate(234deg);
+}
+#tappleN{
+    top: -59.97px;
+    left: 34.66px;
+    transform: rotate(252deg);
+}
+#tappleO{
+    top: -102px;
+    left: 28px;
+    transform: rotate(270deg);
+}
+#tappleP{
+    top: -144.03px;
+    left: 34.66px;
+    transform: rotate(288deg);
+}
+#tappleQ{
+    top: -146px;
+    left: 240.21px;
+    transform: rotate(60deg);
+}
+#tappleR{
+    top: -181.94px;
+    left: 53.97px;
+    transform: rotate(306deg);
+}
+#tappleS{
+    top: -212.03px;
+    left: 84.06px;
+    transform: rotate(324deg);
+}
+#tappleT{
+    top: -231.34px;
+    left: 121.97px;
+    transform: rotate(342deg);
+}
+#tappleU{
+    top: -58px;
+    left: 240.21px;
+    transform: rotate(120deg);
+}
+#tappleV{
+    top: -14px;
+    left: 164px;
+    transform: rotate(180deg);
+}
+#tappleW{
+    top: -238px;
+    left: 164px;
+    transform: rotate(360deg);
+}
+#tappleX{
+    top: -58px;
+    left: 87.79px;
+    transform: rotate(240deg);
+}
+#tappleY{
+    top: -146px;
+    left: 87.79px;
+    transform: rotate(300deg);
+}
+#tappleZ{
+    top: -190px;
+    left: 164px;
+    transform: rotate(360deg);
+}
