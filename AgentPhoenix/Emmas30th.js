@@ -260,7 +260,7 @@ tappleElems.forEach(elem => elem.addEventListener('focus', focusLetter.bind(null
 tappleElems.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind(null, elem, 'black')));
 tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind(null, elem, 'magenta')));
 
-resultElem.addEventListener('focus',verifyAnswer);
+resultElem.addEventListener('change',verifyAnswer);
 
 document.addEventListener('fullscreenchange', closeFullScreen);
 document.addEventListener('mozfullscreenchange', closeFullScreen);
