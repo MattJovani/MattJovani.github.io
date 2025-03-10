@@ -11,7 +11,7 @@
   font-family: "Times New Roman";
   font-size: 50px;
   line-height: 80px;
-  background-image: url(http://ataredo.com/external/image/flip.png);
+  background-image: url(flip.png), url(flip.png), url(flip.png);
   background-position: 0 0, 50% 50%, 100% 150%;
   background-size: 300% 50%;
   background-repeat: no-repeat;
