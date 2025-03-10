@@ -138,7 +138,7 @@ function nextSlide(divHide, divShow){
 document.getElementById(divHide).style.display = 'none';
 document.getElementById(divShow).style.display = 'inline';
 document.getElementById('counter').innerHTML = "mission<br>" + counter + "/30";
-   document.getElementById('counter').style.color = "magenta";
+   document.getElementById('counter').style.color = "red";
    nxtButton.disabled = true;
    llbutton.disabled = false;
 }
@@ -261,36 +261,17 @@ tappleElems.forEach(elem => elem.addEventListener('focus', focusLetter.bind(null
 tappleElems.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind(null, elem, 'black')));
 tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind(null, elem, 'magenta')));
 
-//resultElem.addEventListener('DOMSubtreeModified',verifyAnswer);
- 
- // const observer = new MutationObserver( list => {
- //   const evt = new CustomEvent('dom-changed', {detail: list});
- //   resultElem.dispatchEvent(evt)
- // });
- // observer.observe(resultElem, {attributes: true, childList: true, subtree: true});
- // resultElem.addEventListener('dom-changed', verifyAnswer);
- 
- // const observer = new MutationObserver(list => {
- //   verifyAnswer;
- // });
- // observer.observe(resultElem, {attributes: true, childList: true, subtree: true});
- 
- //Make DOM editable for ease of demo
- document.body.contentEditable = true;
- // Implement the code that will run when triggered
  var observer = new MutationObserver(function(mutations) {
      mutations.forEach(function(mutation) {
        document.getElementById('counter').style.color = "green";
      });
  });
- // Define the configuration
  var config = {
       subtree:true, 
       attributes: true, 
       childList: true, 
       characterData: true
  };
- // Observe the target
  observer.observe(resultElem, config);
 
 document.addEventListener('fullscreenchange', closeFullScreen);
