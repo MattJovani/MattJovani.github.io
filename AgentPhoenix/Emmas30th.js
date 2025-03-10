@@ -138,7 +138,7 @@ function nextSlide(divHide, divShow){
 document.getElementById(divHide).style.display = 'none';
 document.getElementById(divShow).style.display = 'inline';
 document.getElementById('counter').innerHTML = "mission<br>" + counter + "/30";
-   document.getElementById('counter').style.color = "pink";
+   document.getElementById('counter').style.color = "yellow";
    nxtButton.disabled = true;
    llbutton.disabled = false;
 }
@@ -280,13 +280,13 @@ tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind
  // Implement the code that will run when triggered
  var observer = new MutationObserver(function(mutations) {
      mutations.forEach(function(mutation) {
-       document.getElementById('counter').style.color = "yellow";
+       document.getElementById('counter').style.color = "magenta";
      });
  });
  // Define the configuration
  var config = {
       subtree:true, 
-      attributes: false, 
+      attributes: true, 
       childList: false, 
       characterData: true
  };
