@@ -9,7 +9,7 @@ var correctPasswords = {
    04: 04,
    05: 05, // disney tapple
    06: 07, //cups of sugar to the moon x2
-   07: 07,
+   07: 777,
    08: 08,
    09: 09,
    10: 10, //wrestling tapple
