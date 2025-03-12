@@ -3,12 +3,12 @@ var tapplePoints = 0;
 var TappleCategory;
 var TappleTitle;
 var correctPasswords = {
-   01: 01,
-   02: 02,
+   01: "bottom announcement",
+   02: 02, //years - - 4 5 7?
    03: 03,
    04: 04,
    05: 05, // disney tapple
-   06: 07, //cups of sugar to the moon x2
+   06: 06,
    07: 777,
    08: 08,
    09: 09,
@@ -28,10 +28,10 @@ var correctPasswords = {
    23: 23,
    24: 24,
    25: 25, //rupaul tapple
-   26: 26,
+   26: 55272,  //SOAD 56 x 47 x 21
    27: "your breath",
-   28: 55272, //56 x 47 x 21
-   29: 29,
+   28: 07, //cups to the moon x2
+   29: "grow", //3:16th word of Bryan's vows
    30: 30, //family tapple
 };
 
@@ -144,7 +144,7 @@ document.getElementById('counter').innerHTML = "mission<br>" + counter + "/30";
 
 function verifyText(){
     var inputText = ia.value;
-    var correctAnswer = correctPasswords[counter];
+    var correctAnswer = correctPasswords[counter].toLowerCase();
     if(inputText == correctAnswer){
       counter++;
       changeInputColour('green');  
