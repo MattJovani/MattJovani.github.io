@@ -143,8 +143,8 @@ document.getElementById('counter').innerHTML = "mission<br>" + counter + "/30";
 }
 
 function verifyText(){
-    var inputText = ia.value;
-    var correctAnswer = correctPasswords[counter].toLowerCase();
+    var inputText = ia.value.toLowerCase();
+    var correctAnswer = correctPasswords[counter];
     if(inputText == correctAnswer){
       counter++;
       changeInputColour('green');  
