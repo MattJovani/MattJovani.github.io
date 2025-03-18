@@ -22,7 +22,7 @@ var correctPasswords = {
    17: 17,
    18: 1080, //baby gate
    19: 19,
-   20: 20, //horror tapple
+   20: 20, //NATO tapple
    21: "gin and juice",
    22: 22,
    23: 23,
@@ -103,11 +103,11 @@ function nextSlide(divHide, divShow){
             break;
         case 15:
             TappleCategory = stmTapple;
-            TappleTitle = 'Stm';
+            TappleTitle = 'STM';
             break;
         case 20:
-            TappleCategory = horrorTapple;
-            TappleTitle = 'Horror';
+            TappleCategory = natoTapple;
+            TappleTitle = 'NATO Alphabet';
             break;
         case 25:
             TappleCategory = rupaulTapple;
