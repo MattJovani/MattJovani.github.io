@@ -1,80 +1,80 @@
 const natoTapple = [
     {letter: "A", items: [
-        "Alpha"
+        "alpha"
     ]},
     {letter: "B", items: [
-       "Bravo"
+       "bravo"
     ]},
     {letter: "C", items: [
-        "Charlie"
+        "charlie"
     ]},
     {letter: "D", items: [
-        "Delta"
+        "delta"
     ]},
     {letter: "E", items: [
-       "Echo"
+       "echo"
     ]},
     {letter: "F", items: [
-        "Foxtrot"
+        "foxtrot"
     ]},
     {letter: "G", items: [
-        "Golf"
+        "golf"
     ]},
     {letter: "H", items: [
-        "Hotel"
+        "hotel"
     ]},
     {letter: "I", items: [
-        "India"
+        "india"
     ]},
     {letter: "J", items: [
-        "Juliette"
+        "juliette"
     ]},
     {letter: "K", items: [
-        "Kilo"
+        "kilo"
     ]},
     {letter: "L", items: [
-       "Lima"
+       "lima"
     ]},
     {letter: "M", items: [
-        "Mike"
+        "mike"
     ]},
     {letter: "N", items: [
-        "November"
+        "november"
     ]},
     {letter: "O", items: [
-        "Oscar"
+        "oscar"
     ]},
     {letter: "P", items: [
-       "Papa"
+       "papa"
     ]},
     {letter: "Q", items: [
-        "Quebec"
+        "quebec"
     ]},
     {letter: "R", items: [
-       "Romeo"
+       "romeo"
     ]},
     {letter: "S", items: [
-        "Sierra"
+        "sierra"
     ]},
     {letter: "T", items: [
-        "Tango"
+        "tango"
     ]},
     {letter: "U", items: [
-        "Uniform"
+        "uniform"
     ]},
     {letter: "V", items: [
-        "Victor"
+        "victor"
     ]},
     {letter: "W", items: [
-        "Whiskey"
+        "whiskey"
     ]},
     {letter: "X", items: [
-        "Xray"
+        "xray"
     ]},
     {letter: "Y", items: [
-        "Yankee"
+        "yankee"
     ]},
     {letter: "Z", items: [
-        "Zulu"
+        "zulu"
     ]},
 ]
