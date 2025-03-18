@@ -5,7 +5,7 @@ var TappleTitle;
 var correctPasswords = {
    01: "bottom announcement",
    02: 02, //years - - 4 5 7?
-   03: 03,
+   03: "it's not gay if it's in a 3 way",
    04: 04,
    05: 05, // disney tapple
    06: 06,
