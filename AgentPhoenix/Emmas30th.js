@@ -36,7 +36,7 @@ var correctPasswords = {
 };
 
 var type = document.getElementById('typing');
-var ia = document.getElementById('inputAnswer');
+var ia = document.getElementById('inputAnswer').toLowerCase();
    var nxtButton = document.getElementById('nextButton');
    var llbutton = document.getElementById('lifeLineButton');
    var popup = false;
@@ -143,7 +143,7 @@ document.getElementById('counter').innerHTML = "mission<br>" + counter + "/30";
 }
 
 function verifyText(){
-    var inputText = ia.value.toLowerCase();
+    var inputText = ia.value;
     var correctAnswer = correctPasswords[counter];
     if(inputText == correctAnswer){
       counter++;
