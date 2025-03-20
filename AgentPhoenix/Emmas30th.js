@@ -5,11 +5,11 @@ var TappleTitle;
 var correctPasswords = {
    01: "bottom announcement",
    02: 02, //years - - 4 5 7?
-   03: "it's not gay if it's in a 3 way",
+   03: "it's not gay when it's in a 3 way",
    04: 04,
    05: 05, // disney tapple
    06: 06,
-   07: 777,
+   07: "beige",
    08: 08,
    09: 09,
    10: 10, //wrestling tapple
@@ -24,7 +24,7 @@ var correctPasswords = {
    19: 19,
    20: 20, //NATO tapple
    21: "gin and juice",
-   22: 22,
+   22: 130,
    23: 23,
    24: 24,
    25: 25, //rupaul tapple
