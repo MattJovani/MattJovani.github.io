@@ -4,29 +4,29 @@ var TappleCategory;
 var TappleTitle;
 var correctPasswords = {
    01: "bottom announcement",
-   02: 02, //years - - 4 5 7?
+   02: 27456, //years
    03: "it's not gay when it's in a 3 way",
-   04: 04,
+   04: 36820, //smarties
    05: 05, // disney tapple
-   06: 06,
+   06: 10976, //days old
    07: "beige",
-   08: 08,
-   09: 09,
+   08: 43418, //phone number
+   09: "madagascar",
    10: 10, //wrestling tapple
    11: "time",
    12: 93746, //fuck=9 fucked=37 total=46
-   13: 13,
-   14: 14,
+   13: "aaacccdeefgiiiiiiillloopprrssstuux",
+   14: 32722, //vowels
    15: 15, //metro tapple
-   16: 16,
-   17: 17,
+   16: 17643, //coins
+   17: "rat",
    18: 1080, //baby gate
-   19: 19,
+   19: "zipolite",
    20: 20, //NATO tapple
    21: "gin and juice",
-   22: 130,
-   23: 23,
-   24: 24,
+   22: 130, //mj
+   23: "mayhem",
+   24: 70126, //food combo
    25: 25, //rupaul tapple
    26: 55272,  //SOAD 56 x 47 x 21
    27: "your breath",
@@ -88,7 +88,13 @@ function nextSlide(divHide, divShow){
     ia.value = '';
     tapplePoints = 0;
     resetTapple();
-    if(counter%5==0){
+    if(counter==31){
+        type.style.display = 'none';
+        lock.style.display = 'none';
+        game.style.display = 'none';
+        document.body.style.background = "url(cake.jpeg)";
+        document.getElementById("counterDiv").style.display = "none";
+    }else if(counter%5==0){
         type.style.display = 'none';
         lock.style.display = 'none';
         game.style.display = 'inline';

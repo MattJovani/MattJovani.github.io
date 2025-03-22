@@ -14,6 +14,13 @@ footer{
 #introMsg{
     margin-left: 20%;
     margin-top: 22%;
+    background: hsla(0, 0%, 100%, 0.4);
+    border-radius: 15px;
+}
+#counterDiv{
+    width: 75px;
+    background: hsla(0, 0%, 100%, 0.4);
+    border-radius: 15px;
 }
 #hotdog{
     display: none;
@@ -22,6 +29,8 @@ footer{
 #fuckline, #arrowline{
     display: flex;
     justify-content: space-between;
+    background: hsla(0, 0%, 100%, 0.4);
+    border-radius: 15px;
 }
 .invis{
     color: transparent;
@@ -31,6 +40,8 @@ footer{
    font-family: "Lucida Handwriting", cursive;
    font-weight: 900;
    font-size: 5vh;
+   background: hsla(0, 0%, 100%, 0.4);
+   border-radius: 15px;
 }
 button {
   padding: 15px 25px;
