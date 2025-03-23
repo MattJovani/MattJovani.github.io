@@ -279,7 +279,7 @@ tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind
  };
  observer.observe(resultElem, config);
  
- document.body.addEventListener("focusin", event => {
+ document.body.addEventListener("focus", event => {
      const target = event.target;
      switch (target.tagName){
          case "INPUT":
@@ -288,7 +288,7 @@ tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind
              document.body.classList.add("keyboard");
      }
  }, true);
- document.body.addEventListener("focusout", () =>{
+ document.body.addEventListener("blur", () =>{
      document.body.classList.remove("keyboard");
  }, true);
 
