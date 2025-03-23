@@ -5,7 +5,7 @@ html,body{
     overflow: hidden
 }
 body.keyboard{
-    height: calc(100% + 50%);
+    height: calc(100% + 800vh);
 }
 footer{
    position: fixed;
@@ -17,7 +17,7 @@ footer{
 #introMsg{
     margin-left: 10%;
     margin-top: 22%;
-    font-size: 30vh;
+    font-size: 3vh;
     font-weight: 600;
     background: hsla(0, 0%, 100%, 0.4);
     border-radius: 15px;
