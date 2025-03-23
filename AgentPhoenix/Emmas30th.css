@@ -17,7 +17,8 @@ footer{
 #introMsg{
     margin-left: 10%;
     margin-top: 22%;
-    font-size: 30px;
+    font-size: 30vh;
+    font-weight: 600;
     background: hsla(0, 0%, 100%, 0.4);
     border-radius: 15px;
 }
