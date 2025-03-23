@@ -279,19 +279,6 @@ tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind
  };
  observer.observe(resultElem, config);
  
- document.body.addEventListener("focus", event => {
-     const target = event.target;
-     switch (target.tagName){
-         case "INPUT":
-         case "TEXTAREA":
-         case "SELECT":
-             document.body.classList.add("keyboard");
-     }
- }, true);
- document.body.addEventListener("blur", () =>{
-     document.body.classList.remove("keyboard");
- }, true);
-
 document.addEventListener('fullscreenchange', closeFullScreen);
 document.addEventListener('mozfullscreenchange', closeFullScreen);
 document.addEventListener('webkitfullscreenchange', closeFullScreen);
