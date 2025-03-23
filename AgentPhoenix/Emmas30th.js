@@ -278,6 +278,19 @@ tappleBonus.forEach(elem => elem.addEventListener('focusout', unfocusLetter.bind
       characterData: true
  };
  observer.observe(resultElem, config);
+ 
+ document.body.addEventListener("focusin", event => {
+     const target = event.target;
+     switch (target.tagName){
+         case "INPUT":
+         case "TEXTAREA":
+         case "SELECT":
+             document.body.classList.add("keyboard");
+     }
+ }, true);
+ document.body.addEventListener("focusout", () =>{
+     document.body.classList.remove("keyboard");
+ }, true);
 
 document.addEventListener('fullscreenchange', closeFullScreen);
 document.addEventListener('mozfullscreenchange', closeFullScreen);
