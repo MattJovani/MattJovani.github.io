@@ -8,6 +8,13 @@ const familyTapple = [
         "alina",
         "adamo",
         "alec",
+        "andre",
+        "angel",
+        "ana",
+        "alex",
+        "amner",
+        "aury",
+        "avy",
     ]},
     {letter: "B", items: [
         "brutus",
@@ -19,6 +26,9 @@ const familyTapple = [
         "cynthia",
         "camila",
         "christopher",
+        "camille",
+        "carlos",
+        "connie",
     ]},
     {letter: "D", items: [
         "david",
@@ -27,6 +37,10 @@ const familyTapple = [
         "dani",
         "donald",
         "deklan",
+        "dennis",
+        "dylan",
+        "derek",
+        "dolly",
     ]},
     {letter: "E", items: [
         "emilie",
@@ -36,18 +50,22 @@ const familyTapple = [
         "emerson",
         "eli",
         "emma",
+        "eve",
     ]},
     {letter: "F", items: [
-        "flynn"
+        "flynn",
+        "francis",
     ]},
     {letter: "G", items: [
         "giggi",
+        "gabriel",
     ]},
     {letter: "H", items: [
         "helen",
+        "humberto",
     ]},
     {letter: "I", items: [
-        
+        "imani",
     ]},
     {letter: "J", items: [
         "jordy",
@@ -55,11 +73,18 @@ const familyTapple = [
         "jonathan",
         "jexie",
         "julian",
-        "john",
+        "john-andre",
+        "jacynte",
+        "jocelyne",
+        "jade",
+        "jordan",
+        "jeannie",
+        "javier",
     ]},
     {letter: "K", items: [
         "keano",
         "kevin",
+        "kylo",
     ]},
     {letter: "L", items: [
         "lianna",
@@ -69,6 +94,11 @@ const familyTapple = [
         "louiselle",
         "laura",
         "lincoln",
+        "louise",
+        "line",
+        "linda",
+        "luca",
+        "lesly",
     ]},
     {letter: "M", items: [
         "montserrat",
@@ -84,19 +114,31 @@ const familyTapple = [
         "magenta",
         "myllia",
         "matthew",
+        "maxime",
+        "martine",
+        "marie-chantale",
+        "maria",
+        "marisol",
+        "maritza",
     ]},
     {letter: "N", items: [
         "natasha",
         "nathan",
+        "nathalie",
+        "nicole",
     ]},
     {letter: "O", items: [
         "oliver",
         "olivia",
+        "oceanne",
+        "olivier",
+        "oscar",
     ]},
     {letter: "P", items: [
         "pocahontas",
         "puchy",
         "poochy",
+        "pierre",
     ]},
     {letter: "Q", items: [
         
@@ -104,6 +146,9 @@ const familyTapple = [
     {letter: "R", items: [
         "raphael",
         "ricky",
+        "roxane",
+        "robert",
+        "richard",
     ]},
     {letter: "S", items: [
         "susan",
@@ -114,12 +159,16 @@ const familyTapple = [
         "sabrina",
         "stephen",
         "sylvain",
+        "sebastien",
+        "simon",
+        "stephane",
     ]},
     {letter: "T", items: [
         "tony",
         "tom",
         "tito",
         "tanya",
+        "teresse",
     ]},
     {letter: "U", items: [
         
@@ -127,6 +176,7 @@ const familyTapple = [
     {letter: "V", items: [
         "victoria",
         "valerie",
+        "vincent",
     ]},
     {letter: "W", items: [
         "william",
@@ -140,6 +190,7 @@ const familyTapple = [
         "yayo",
         "yaya",
         "yan",
+        "yves",
     ]},
     {letter: "Z", items: [
         "zachary",

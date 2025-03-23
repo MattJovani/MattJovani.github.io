@@ -192,7 +192,7 @@ function verifyTapple(letter, position, elem, val){
         elem.disabled = true;
         if(![17,21,22,24,25,26].includes(position)){
             tapplePoints++;
-            if(tapplePoints>0){ //==20 FIX
+            if(tapplePoints==20){
             counter++;
             nxtButton.disabled = false;
             llbutton.disabled = true;
