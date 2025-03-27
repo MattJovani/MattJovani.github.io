@@ -6,7 +6,7 @@ html,body{
 }
 footer{
    position: fixed;
-   bottom: 0vh;
+   bottom: 0;
 }
 #ticker{
     bottom: 0vh;
@@ -98,6 +98,8 @@ input{
     text-align: center;
     color: transparent;
     text-shadow: 0 0 0 #2196f3;
+    bottom: 0;
+    position: fixed;
 }
 input:focus{
     outline: none;
