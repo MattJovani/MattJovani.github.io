@@ -1,4 +1,3 @@
-<script>
 var time = 0;
 var resetTime = 46;
 var pause = true;
@@ -2265,4 +2264,3 @@ const chapter11 = [
       </span>", <!-- 3# -->          
    ]
 ];
-</script>
