@@ -32,10 +32,7 @@ body{
    background-image: radial-gradient(circle, goldenrod, white);
 }
 
-body:not(h2, input, label, #centerDiv, #winnerMsg, #percentMsg, #startButton, #includePopup, #popupContainer, #endPopup, .endButtons, #crayon, #satellite, #timer, .cars){   
-   opacity: 0.1;
-   transition: 2s;
-}
+
 
 #popupContainer{
    display: grid;
