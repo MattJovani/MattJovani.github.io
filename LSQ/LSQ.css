@@ -1,0 +1,508 @@
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(90deg);
+    transform-origin: right top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+}
+
+header{
+   position: fixed;
+   width: 98%;
+   top: 2vh;
+   display: grid;
+   grid-template-columns: 19% 19% 19% 19% 19% 3%;
+   opacity: 1;
+}
+
+footer{
+   display: none;
+   position: fixed;
+   width: 100%;
+   bottom: 2vh;
+}
+
+body{
+   background-image: radial-gradient(circle, goldenrod, white);
+}
+
+body:not(h2, input, label, #centerDiv, #winnerMsg, #percentMsg, #startButton, #includePopup, #popupContainer, #endPopup, .endButtons, #crayon, #satellite, #timer, .cars){   
+   opacity: 0.1;
+   transition: 2s;
+}
+
+#popupContainer{
+   display: grid;
+   grid-template-columns: 9% 50%;
+   grid-template-rows: 15% 15% 15% 15%;
+   grid-gap: 3%;
+}
+
+#includePopup{
+   grid-column: 2/3;
+   grid-row: 1/5;
+}
+
+label:has(input[class="choosePlayers"]){
+   transform: scaleX(-1);
+   font-size: 500%;
+   opacity: 0.3;
+}
+
+label:has(input[id="yellowPlayerCheck"]){
+   filter: hue-rotate(0deg) brightness(1.2) opacity(1);
+}
+
+label:has(input[id="bluePlayerCheck"]){
+   filter: hue-rotate(180deg) brightness(1) opacity(1);
+}
+
+label:has(input[id="redPlayerCheck"]){
+   filter: hue-rotate(325deg) brightness(1) opacity(1);
+}
+
+label:has(input[id="greenPlayerCheck"]){
+   filter: hue-rotate(60deg) brightness(88%) opacity(1);
+}
+
+.popups{
+   display: grid;
+   grid-template-columns: 8% 8% 8% 8%;
+   grid-template-rows: 23% 23% 23%;
+   grid-gap: 15%;
+   justify-content: center;
+   align-items: center; 
+   z-index: 3;
+   background-image: radial-gradient(circle, orchid, plum);
+   border-radius: 10%;
+   margin: auto;
+   margin-top: 1.5vh;
+   width: 170%;
+   height: 100%;
+}
+
+#centerDiv{
+   display: grid;
+   grid-template-columns: 95% 5%;
+   grid-template-rows: 33% 33% 33%;
+   grid-column: 2/4;
+   text-align: center;
+}
+
+#inclureTxt{
+   grid-row: 1/4;
+}
+
+#horsCahier{
+   grid-row-start: 2;
+   font-size: 8px;
+   margin-left: 50px;
+}
+
+#timerInput{
+   width: 60px;
+   background-color: #911199;
+   font-size: 30px;
+}
+
+label{
+   padding: 20px;
+   display: flex;
+   justify-self: center;
+   text-align: center;
+}
+
+label:has(input[type="checkbox"]:checked):has(input[class="checkboxes"]){
+   border: 5px solid green;
+   border-radius: 50%;
+}
+
+label:has(input[type="checkbox"]:checked):has(input[class="choosePlayers"]){
+   opacity: 1;
+}
+
+input[type="checkbox"]:not(:checked),input[type="checkbox"]:checked{
+   display: none;
+   text-align: center;
+}
+
+#startButton{
+   background-color: green;
+   color: white;
+   width: 40%;
+   height: 40%;
+}
+
+#startButton:disabled{
+   opacity: 0.2;
+}
+
+#scoregrid{
+   display: grid;
+   grid-template-columns: repeat(11, 8.8%);
+   grid-template-rows: 98%;
+}
+
+#scoregrid > div{
+   align-content: center;
+   text-align: center;
+   background-color: rgb(100,100,100);
+   border: 1px solid white;
+   font-size: 75px;
+   font-weight: bold;
+   color: black;
+}
+
+.whiteBorder{
+   box-shadow:inset 4px 0px 0px 0px orange;
+}
+
+#mainArea{
+   position: absolute;
+   width: 95%;
+   height: 72%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#leftContainter{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   padding-top: 5%;
+}
+
+#fuel{
+   font-size: 45px;
+   width: 100%;
+   height: 100%;
+   border-radius: 36%;
+   background-color: slategrey;
+   filter: hue-rotate(75deg) brightness(0.8) opacity(1);
+}
+
+#fuel:disabled{
+   opacity: 0.2;
+}
+
+#fuelPopup{
+   z-index: 3;
+   position: absolute;
+   display: none;
+   grid-template-columns: 45% 45%;
+   grid-template-rows: 45% 45%;
+   border-radius: 25%;
+   width: 25%;
+   height: 50%;
+   left: 8%; 
+}
+
+.stealCars{
+   font-size: xx-large;
+   background-color: pink;
+   border-radius: 25%;
+}
+
+#yellowSteal{
+   filter: hue-rotate(66deg) brightness(1.8) opacity(1);
+   background-color: hotpink;
+}
+
+#blueSteal{
+   filter: hue-rotate(225deg) brightness(1) opacity(1);
+}
+
+#redSteal{
+   filter: hue-rotate(0deg) brightness(1) opacity(1);
+}
+
+#greenSteal{
+   filter: hue-rotate(100deg) brightness(1) opacity(1);
+}
+
+#timer{
+   text-align: center;
+   
+   font-size: xx-large;
+   font-weight: bold;
+}
+
+#wrongButton:disabled, #rightButton:disabled{
+   opacity: 0.2;
+}
+
+#wrongButton{
+   width: 100%;
+   height: 150%;
+   border-radius: 36%;
+   background-color: tomato;
+}
+
+#rightButton{
+   width: 8%;
+   height: 40%;
+   border-radius: 36%;
+   background-color: yellowgreen;
+}
+
+#vehicles{
+   display: none;
+}
+
+.cars{
+   position: absolute;
+   font-size: 20%;
+   z-index: 1;
+   transition: 1.5s;
+   opacity: 0;
+}
+
+#yellowCar{
+   bottom: -15%;
+   left: 0%;
+   filter: hue-rotate(1deg) brightness(1) opacity(1);
+}
+
+#blueCar{
+   bottom: -15%;
+   left: 2%;
+   filter: hue-rotate(180deg) brightness(1) opacity(1);
+}
+
+#redCar{ 
+   bottom: -15%;
+   left: 4%;
+   filter: hue-rotate(288deg) brightness(1) opacity(1);
+}
+
+#greenCar{
+   bottom: -15%;
+   left: 6%;
+   filter: hue-rotate(90deg) brightness(1) opacity(1);
+}
+
+.trucks{
+   font-size: xx-large;
+   position: absolute;
+   z-index: 3;
+   transform: scaleX(-1);
+   transition: 1.5s;
+}
+
+#yellowTruck{  
+   bottom: 35%;
+   left: 2.3%;
+   filter: hue-rotate(0deg) brightness(1.2) opacity(1);
+}
+
+#blueTruck{
+   bottom: 12.25%;
+   left: 2.3%;
+   filter: hue-rotate(180deg) brightness(1) opacity(1);
+}
+
+#redTruck{  
+   bottom: -12.25%;
+   left: 2.3%;
+   filter: hue-rotate(325deg) brightness(1) opacity(1);
+}
+
+#greenTruck{  
+   bottom: -35%;
+   left: 2.3%;
+   filter: hue-rotate(60deg) brightness(88%) opacity(1);
+}
+
+#crayon{
+   position: absolute;
+   margin: 41%; 
+   font-size: 120px;
+   transform: rotate(22.5deg);
+   transition: filter 2s, transform 2s;
+   filter: hue-rotate(60deg) brightness(2) opacity(0.4);
+}
+
+#prompt{
+   z-index: 2;
+   font-size: 45px;
+   text-align: center;
+   max-width: 72%;
+   justify-self: center;
+}
+   
+#endPopup{
+   display: none;
+   grid-template-columns: 17% 17% 17%;
+   grid-template-rows: 17% 17% 17%;
+   grid-gap: 10%;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 3;
+   border-radius: 10%;
+   margin: auto;
+   top: 8%;
+   left: 8%;
+   width: 85%;
+   height: 85%;
+    background-image: radial-gradient(circle, transparent, white);
+    transition: background-color 1s;
+    transition: display 3s;
+}
+
+#endMessage{
+   grid-column: 1/4;
+   grid-row: 1/3;
+   padding-top: 10vh;
+   text-align: center;
+}
+
+#percentMsg{
+   font-size: 50px;
+}
+
+.endButtons{
+   background-color: lightsalmon;
+   width: 30vw;
+   border-radius: 25%;
+   margin-top: 8vh;
+   height: 100%;
+   width: 75%;
+}
+
+#contButton{
+   grid-column-start: 1;
+   grid-row-start: 3;
+   margin-left: 75%;  
+}
+
+#ou{
+   grid-column-start: 2;
+   grid-row-start: 3;   
+   text-align: center;
+   margin-top: 10vh;
+}
+
+#restartButton{
+   grid-column-start: 3;
+   grid-row-start: 3;
+   margin-left: -50%;
+}
+
+.yellow1{
+    background-color:yellow; 
+}
+
+.yellow2{
+    background-color:wheat;
+}
+
+.yellow3{
+    background-color: gold;
+}
+
+.yellow4{
+    background-color: palegoldenrod;
+}
+
+.blue1{
+    background-color: royalblue; 
+}
+
+.blue2{
+    background-color: deepskyblue;
+}
+
+.blue3{
+    background-color: cornflowerblue;
+}
+
+.blue4{
+    background-color: dodgerblue;
+}
+
+.red1{
+    background-color: tomato; 
+}
+
+.red2{
+    background-color: indianred;
+}
+
+.red3{
+    background-color: lightcoral;
+}
+
+.red4{
+    background-color: orangered;
+}
+
+.green1{
+    background-color: springgreen; 
+}
+
+.green2{
+    background-color: yellowgreen;
+}
+
+.green3{
+    background-color: chartreuse;
+}
+
+.green4{
+    background-color: limegreen;
+}
+
+#enterFullscreen, #exitFullscreen{
+   background-color: transparent;
+   border: none;
+   right: 1vw;
+   top: 1vh;
+}
+
+#exitFullscreen{
+   display:none;
+   right: 1vw;
+   top: 1vh;
+}
+
+.packages{
+   font-size: 333%;
+}
+
+#yellowPackage{
+   visibility: hidden;
+   filter: hue-rotate(40deg) brightness(1.4) opacity(1);
+}
+
+#bluePackage{
+   visibility: hidden;
+   filter: hue-rotate(180deg) brightness(1) opacity(1);
+}
+
+#redPackage{
+   visibility: hidden;
+   filter: hue-rotate(313deg) brightness(1) opacity(1);
+}
+
+#greenPackage{
+   visibility: hidden;
+   filter: hue-rotate(60deg) brightness(1) opacity(1);
+}
+
+#satellite{
+   z-index: 2;
+   position: absolute;
+   top: 104%;
+   left: -2vw;
+   font-size: 50px;
+   transform: rotate(25deg);
+   opacity: 0;
+}

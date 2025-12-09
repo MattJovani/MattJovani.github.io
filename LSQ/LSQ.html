@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="LSQ.css">
+</head>
+
+
+
+<header>
+<div></div>
+<div id="yellowPackage" class="packages">&#128230<span id="yellowTotal"></span></div>
+<div id="bluePackage" class="packages">&#128230<span id="blueTotal"></div>
+<div id="redPackage" class="packages">&#128230<span id="redTotal"></div>
+<div id="greenPackage" class="packages">&#128230<span id="greenTotal"></div>
+<button id="enterFullscreen" onclick="openFullscreen()">&#128421</button>
+<button id="exitFullscreen" onclick="closeFullscreen()">&#128245</button>
+</header>
+
+<body>
+<div id="popupContainer">
+<label>&#128666<input id="yellowPlayerCheck" class="choosePlayers" type="checkbox" value="101" checked></label>
+<label>&#128666<input id="bluePlayerCheck" class="choosePlayers" type="checkbox" value="102" checked></label>
+<label>&#128666<input id="redPlayerCheck" class="choosePlayers" type="checkbox" value="103"></label>
+<label>&#128666<input id="greenPlayerCheck" class="choosePlayers" type="checkbox" value="104"></label>
+<div id="includePopup" class="popups">
+   <label>La pr&eacute;sentation<input class="checkboxes" type="checkbox" value="1"></label>
+   <label>La famille<input class="checkboxes" type="checkbox" value="2"></label>
+   <label>Les &eacute;motions<input class="checkboxes" type="checkbox" value="3"></label>
+   <label>L'&eacute;ducation<input class="checkboxes" type="checkbox" value="4"></label>
+   <label>Les transports<input class="checkboxes" type="checkbox" value="5"></label>                    
+   <div id="centerDiv">
+   <h2 id="inclureTxt">inclure quel Th&egrave;mes?<br><br><button id="startButton" onclick="startGame()" disabled>Start!</button></h2>
+   <input id="timerInput" placeholder="time">
+   <label id="horsCahier">Hors cahier<input class="checkboxes" type="checkbox" value="11"></label>
+   </div>
+   <label>Le temps<input class="checkboxes" type="checkbox" value="6"></label>
+   <label>Le repas<input class="checkboxes" type="checkbox" value="7"></label>
+   <label>La grande ville<input class="checkboxes" type="checkbox" value="8"></label>
+   <label>Sports et loisirs<input class="checkboxes" type="checkbox" value="9"></label>
+   <label>Les animaux<input class="checkboxes" type="checkbox" value="10"></label>
+</div>
+</div>
+<div id="mainArea">
+   <div id="leftContainter">
+      <button id="fuel" onclick="openFuelPopup()">&#128246</button>
+      <div id="fuelPopup">
+         <button id="yellowSteal" class="stealCars" onclick="stealAnswer(0, 'yellow')">&#128664</button>
+         <button id="blueSteal" class="stealCars" onclick="stealAnswer(1, 'blue')">&#128664</button>
+         <button id="redSteal" class="stealCars" onclick="stealAnswer(2, 'red')">&#128664</button>
+         <button id="greenSteal" class="stealCars" onclick="stealAnswer(3, 'green')">&#128664</button>
+      </div>
+      <button id="wrongButton" class="rightWrong" style="font-size: xx-large" onclick="wrongAnswer()" disabled>&#10060</button>
+      <p id="timer">0</p>
+      <p id="satellite">&#128225</p>
+   </div>
+   <h1 id="prompt"></h1>
+   <h4 id="crayon">&#128397</h4>
+   <button id="rightButton" class="rightWrong" style="font-size: xx-large" onclick="rightAnswer()" disabled>&#9989</button>
+</div>
+<div id="endPopup">
+   <h2 id="endMessage"><span id="winnerMsg"></span> est le gagnant!!<br>Vous avez r&eacute;vis&eacute; <span id="percentMsg"></span> des mots.<br><br>Est-ce que vous voulez</h2>
+   <button id="contButton" class="endButtons" onclick="continueGame()">continuer</button>
+   <h2 id="ou">ou</h2>
+   <button id="restartButton" class ="endButtons" onclick="restart()">retourner au menu principal</button>
+</div>
+</body>
+
+<footer>
+<div id="scoregrid">
+  <div>0</div>
+  <div>1</div>
+  <div>2</div>
+  <div class="whiteBorder">3</div>
+  <div>4</div>
+  <div>5</div>
+  <div class="whiteBorder">6</div>
+  <div>7</div>
+  <div class="whiteBorder">8</div>
+  <div>9</div>
+  <div id="package" class="whiteBorder" style="font-size: xx-large">&#128230</div>
+  <div id="vehicles">
+<p id="yellowCar"class="cars">&#128732</p>
+<p id="blueCar"class="cars">&#128732</p>
+<p id="redCar"class="cars">&#128732</p>
+<p id="greenCar"class="cars">&#128732</p>
+<p id="yellowTruck"class="trucks">&#128666</p>
+<p id="blueTruck"class="trucks">&#128666</p>
+<p id="redTruck"class="trucks">&#128666</p>
+<p id="greenTruck"class="trucks">&#128666</p>
+</div>
+</div>
+</footer>
+
+
+</html>
