@@ -65,8 +65,8 @@ playerTurn = Math.floor(Math.random()*4+1);
 newPrompt(); document.getElementById('includePopup').style.display = 'none';
 document.getElementById('popupContainer').style.display = 'none';
 document.getElementById('vehicles').style.display = 'inline';
-document.styleSheets[0].cssRules[2].style.display = 'inline';
-document.styleSheets[0].cssRules[4].style.opacity = '1';
+document.styleSheets[0].cssRules[3].style.display = 'inline';
+document.styleSheets[0].cssRules[5].style.opacity = '1';
 document.getElementById('rightButton'). disabled = false;
 document.getElementById('wrongButton'). disabled = false;
 }
