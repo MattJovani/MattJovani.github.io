@@ -18,13 +18,10 @@ header{
    top: 2vh;
    display: grid;
    grid-template-columns: 19% 19% 19% 19% 19% 3%;
-   opacity: 1;
+   
 }
 
-body:not(h2, input, label, #centerDiv, #winnerMsg, #percentMsg, #startButton, #includePopup, #popupContainer, #endPopup, .endButtons, #crayon, #satellite, #timer, .cars){   
-   opacity: 0.1;
-   transition: 2s;
-}
+
 
 footer{
    display: none;
