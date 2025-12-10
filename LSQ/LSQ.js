@@ -299,7 +299,7 @@ function endGame(){
    document.getElementById('percentMsg').innerHTML = percent + '%';
    document.getElementById('rightButton'). disabled = true;
    document.getElementById('rightButton'). disabled = true;
-document.styleSheets[0].cssRules[4].style.opacity = '0.1';
+document.styleSheets[0].cssRules[5].style.opacity = '0.1';
 document.getElementById('endPopup').style.display = 'grid';
 }
 
@@ -362,7 +362,7 @@ function addTotal(chapter){
 
 function continueGame(){
    document.getElementById('endPopup').style.display = 'none';
-document.styleSheets[0].cssRules[4].style.opacity = '1';  
+document.styleSheets[0].cssRules[5].style.opacity = '1';  
 document.getElementById('rightButton'). disabled = false;
 document.getElementById('wrongButton'). disabled = false;
 newPrompt();
@@ -377,7 +377,7 @@ function restart(){
    document.getElementById('includePopup').style.display = 'grid';
    document.getElementById('popupContainer').style.display = 'grid';
    document.getElementById('vehicles').style.display = 'none';
-   document.styleSheets[0].cssRules[2].style.display = 'none';
+   document.styleSheets[0].cssRules[3].style.display = 'none';
 }
 
 var yellowColors = [ "yellow1", "yellow2", "yellow3", "yellow4" ];
