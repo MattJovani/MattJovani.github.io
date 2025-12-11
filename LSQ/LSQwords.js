@@ -442,10 +442,10 @@ const chapter3 = [
    ],
    phraseEasy = [
       "<span style='font-size: 20px;'>\
-      C&eacute;dric niaise encore mais il est adulte.\
+      Emma niaise encore mais elle est adulte.\
       </span><br>\
       <span style='font-size: 30px;'>\
-      C&Eacute;DRIC / NIAISER / ENCORE / MAIS / PT&Eacute; 3 / ADULTE\
+      EMMA / NIAISER / ENCORE / MAIS / PT&Eacute; 3 / ADULTE\
       </span>",<!-- ↑1 -->
       "<span style='font-size: 20px;'>\
       Le cours de LSQ est trop difficile, j'abandonne.\
@@ -848,7 +848,7 @@ const chapter5 = [
       Matthew a dit qu'il va etre en retard. Tu peux arr&ecirc;ter le moteur.\
       </span>", <!-- ↑5 -->
       "<span style='font-size: 20px;'>\
-      Je ne connais pas le chemin pour aller chez C&eacute;dric. Je vais te suivre.\
+      Je ne connais pas le chemin pour aller chez Lydia. Je vais te suivre.\
       </span>", <!-- ↑6 -->
       "<span style='font-size: 20px;'>\
       Je dois aller chercher mes amis, ils m'attendent.\
@@ -1223,10 +1223,10 @@ const chapter7 = [
       POUTINE / CANARD / AVEC / SAUCE / 5 / POIVRE / CUISINER || FAIRE / FACILE\
       </span>", <!-- 9# -->
       "<span style='font-size: 20px;'>\
-      Robert ne sait pas cuisiner, c'est dommage!\
+      Bryan ne sait pas cuisiner, c'est dommage!\
       </span><br>\
       <span style='font-size: 30px;'>\
-      ROBERT / PT&Eacute; 3 / CUISINER / PAS SAVOIR / DOMMAGE!\
+      BRYAN / PT&Eacute; 3 / CUISINER / PAS SAVOIR / DOMMAGE!\
       </span>", <!-- 10# -->
    ],
    phraseHard = [
@@ -1531,10 +1531,10 @@ const chapter9 = [
       BOXE / CANADA / M&Eacute;DAILLE / OR / GAGNER\
       </span>", <!-- 9# -->
       "<span style='font-size: 20px;'>\
-      Robert n'est pas bon au hockey, mais il aime regarder.\
+      Emma n'est pas bonne au hockey, mais elle aime regarder.\
       </span><br>\
       <span style='font-size: 30px;'>\
-      HOCKEY / JOUER / ROBERT / PAS BON / MAIS / REGARDER / AIMER\
+      HOCKEY / JOUER / EMMA / PAS BON / MAIS / REGARDER / AIMER\
       </span>", <!-- 10# -->
    ],
    phraseHard = [
@@ -1545,7 +1545,7 @@ const chapter9 = [
       Je pense que le baseball est trop lent comme sport.\
       </span>", <!-- 2# -->
       "<span style='font-size: 20px;'>\
-      Gab adore l'escalade mais il tombe toujours.\
+      Lydia adore l'escalade mais elle tombe toujours.\
       </span>", <!-- 3# -->
       "<span style='font-size: 20px;'>\
       Je pr&eacute;f&egrave;re regarder les femmes jouer au tennis que les hommes.\
@@ -1688,10 +1688,10 @@ const chapter10 = [
       DEPUIS / &Eacute;COLE / PRIMAIRE / PT&Eacute; 1 / Z&Egrave;BRE / ANIMAL / PR&Eacute;F&Eacute;RER\
       </span>", <!-- ↑# -->
       "<span style='font-size: 20px;'>\
-      Robert est dr&ocirc;le quand il imite les animaux.\
+      Bryan est dr&ocirc;le quand il imite les animaux.\
       </span><br>\
       <span style='font-size: 30px;'>\
-      SI / ROBERT / ANIMAL / IMITER / DR&Ocirc;LE / PT&Eacute; 3\
+      SI / BRYAN / ANIMAL / IMITER / DR&Ocirc;LE / PT&Eacute; 3\
       </span>", <!-- 10# -->
    ],
    phraseHard = [
