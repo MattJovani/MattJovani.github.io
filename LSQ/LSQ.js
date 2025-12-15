@@ -299,7 +299,6 @@ function endGame(){
    document.getElementById('percentMsg').innerHTML = percent + '%';
    document.getElementById('rightButton'). disabled = true;
    document.getElementById('rightButton'). disabled = true;
-document.styleSheets[0].cssRules[3].style.opacity = '0.1';
 document.getElementById('endPopup').style.display = 'grid';
 }
 
