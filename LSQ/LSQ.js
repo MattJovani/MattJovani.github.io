@@ -65,6 +65,7 @@ playerTurn = Math.floor(Math.random()*4+1);
 newPrompt(); document.getElementById('includePopup').style.display = 'none';
 document.getElementById('popupContainer').style.display = 'none';
 document.getElementById('vehicles').style.display = 'inline';
+document.styleSheets[1].cssRules[2].style.display = 'inline';
 document.getElementById('rightButton'). disabled = false;
 document.getElementById('wrongButton'). disabled = false;
 }
@@ -373,6 +374,7 @@ function restart(){
    document.getElementById('includePopup').style.display = 'grid';
    document.getElementById('popupContainer').style.display = 'grid';
    document.getElementById('vehicles').style.display = 'none';
+document.styleSheets[1].cssRules[2].style.display = 'none';
 }
 
 var yellowColors = [ "yellow1", "yellow2", "yellow3", "yellow4" ];
