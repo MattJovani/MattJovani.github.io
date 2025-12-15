@@ -66,7 +66,7 @@ newPrompt(); document.getElementById('includePopup').style.display = 'none';
 document.getElementById('popupContainer').style.display = 'none';
 document.getElementById('vehicles').style.display = 'inline';
 document.styleSheets[1].cssRules[2].style.display = 'inline';
-document.styleSheets[1].cssRules[3].style.opacity = '1';
+document.styleSheets[1].cssRules[3].style.display = 'inline';
 document.getElementById('rightButton'). disabled = false;
 document.getElementById('wrongButton'). disabled = false;
 }
