@@ -60,7 +60,8 @@ document.getElementById('enterFullscreen').style.display = 'inline';
 function startGame(){
 checkChecked();
 togglePlayers();
-resetTime = document.getElementById("timerInput").value +1;
+resetTime = document.getElementById("timerInput").value;
+resetTime ++;
 playerTurn = Math.floor(Math.random()*4+1);
 newPrompt(); document.getElementById('includePopup').style.display = 'none';
 document.getElementById('popupContainer').style.display = 'none';
