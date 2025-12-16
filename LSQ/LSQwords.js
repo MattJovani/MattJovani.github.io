@@ -1545,7 +1545,7 @@ const chapter9 = [
       Je pense que le baseball est trop lent comme sport.\
       </span>", <!-- 2# -->
       "<span style='font-size: 20px;'>\
-      Lydia adore l'escalade mais elle tombe toujours.\
+      Bryan adore l'escalade mais il tombe toujours.\
       </span>", <!-- 3# -->
       "<span style='font-size: 20px;'>\
       Je pr&eacute;f&egrave;re regarder les femmes jouer au tennis que les hommes.\
@@ -1688,10 +1688,10 @@ const chapter10 = [
       DEPUIS / &Eacute;COLE / PRIMAIRE / PT&Eacute; 1 / Z&Egrave;BRE / ANIMAL / PR&Eacute;F&Eacute;RER\
       </span>", <!-- ↑# -->
       "<span style='font-size: 20px;'>\
-      Bryan est dr&ocirc;le quand il imite les animaux.\
+      Lydia est dr&ocirc;le quand elle imite les animaux.\
       </span><br>\
       <span style='font-size: 30px;'>\
-      SI / BRYAN / ANIMAL / IMITER / DR&Ocirc;LE / PT&Eacute; 3\
+      SI / LYDIA / ANIMAL / IMITER / DR&Ocirc;LE / PT&Eacute; 3\
       </span>", <!-- 10# -->
    ],
    phraseHard = [
