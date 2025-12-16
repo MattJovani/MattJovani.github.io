@@ -1223,10 +1223,10 @@ const chapter7 = [
       POUTINE / CANARD / AVEC / SAUCE / 5 / POIVRE / CUISINER || FAIRE / FACILE\
       </span>", <!-- 9# -->
       "<span style='font-size: 20px;'>\
-      Bryan ne sait pas cuisiner, c'est dommage!\
+      Matthew ne sait pas cuisiner, mais Bryan peut l'aider\
       </span><br>\
       <span style='font-size: 30px;'>\
-      BRYAN / PT&Eacute; 3 / CUISINER / PAS SAVOIR / DOMMAGE!\
+      MATTHEW / PT&Eacute; 3 / CUISINER / PAS SAVOIR / MAIS / BRYAN / AIDER / POUVOIR\
       </span>", <!-- 10# -->
    ],
    phraseHard = [
