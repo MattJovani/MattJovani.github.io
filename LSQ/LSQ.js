@@ -1,5 +1,6 @@
 var time = 0;
-var resetTime = 45;
+var wordTime = 22;
+var phraseTime = 35;
 var pause = true;
 var newWord;
 var player = 'yellow';
@@ -60,8 +61,6 @@ document.getElementById('enterFullscreen').style.display = 'inline';
 function startGame(){
 checkChecked();
 togglePlayers();
-resetTime = document.getElementById("timerInput").value;
-resetTime ++;
 playerTurn = Math.floor(Math.random()*4+1);
 newPrompt(); document.getElementById('includePopup').style.display = 'none';
 document.getElementById('popupContainer').style.display = 'none';
@@ -222,7 +221,23 @@ function newPrompt(){
    document.getElementById('crayon').style.filter = window[player+'Crayon'];
    document.getElementById('crayon').style.transform = crayonPosition[window[player+'Score']]; document.getElementById(player+'Steal').disabled = true;
    document.getElementById('fuel').disabled = true;
-   time = resetTime;
+   switch(window[player+'lvl']){
+      case 0:
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+         time = wordTime;
+         break;
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+      case 10:
+         time = phraseTime;
+         break;
+}
    pause = false;
 }
 
