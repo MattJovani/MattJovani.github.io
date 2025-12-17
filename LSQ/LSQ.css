@@ -104,12 +104,6 @@ label:has(input[id="greenPlayerCheck"]){
    margin-left: 50px;
 }
 
-#timerInput{
-   width: 60px;
-   background-color: #911199;
-   font-size: 30px;
-}
-
 label{
    padding: 20px;
    display: flex;
