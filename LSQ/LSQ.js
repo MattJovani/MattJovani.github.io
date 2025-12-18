@@ -40,6 +40,7 @@ var audioGreen = new Audio('./LSQmusic/Anticipation-Green.ogg');
 var audioBlue = new Audio('./LSQmusic/Anticipation-Blue.ogg');
 var audioSolving = new Audio('./LSQmusic/Anticipation-Solving.ogg');
 var audioWin = new Audio('./LSQmusic/Anticipation-Win.ogg');
+var playerSong = audioWin;
 var elem = document.documentElement;
 
 function openFullscreen() {
