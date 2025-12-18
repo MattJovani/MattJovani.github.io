@@ -32,14 +32,14 @@ var level2 = [];
 var level3 = [];
 var level4 = [];
 
-var audioTitle = new Audio('./LSQmusic.Anticipation-Title.ogg');
-var audioSelect = new Audio('./LSQmusic.Anticipation-Select.ogg');
-var audioYellow = new Audio('./LSQmusic.Anticipation-Yellow.ogg');
-var audioPink = new Audio('./LSQmusic.Anticipation-Pink.ogg');
-var audioGreen = new Audio('./LSQmusic.Anticipation-Green.ogg');
-var audioBlue = new Audio('./LSQmusic.Anticipation-Blue.ogg');
-var audioSolving = new Audio('./LSQmusic.Anticipation-Solving.ogg');
-var audioWin = new Audio('./LSQmusic.Anticipation-Win.ogg');
+var audioTitle = new Audio('./LSQmusic/Anticipation-Title.ogg');
+var audioSelect = new Audio('./LSQmusic/Anticipation-Select.ogg');
+var audioYellow = new Audio('./LSQmusic/Anticipation-Yellow.ogg');
+var audioPink = new Audio('./LSQmusic/Anticipation-Pink.ogg');
+var audioGreen = new Audio('./LSQmusic/Anticipation-Green.ogg');
+var audioBlue = new Audio('./LSQmusic/Anticipation-Blue.ogg');
+var audioSolving = new Audio('./LSQmusic/Anticipation-Solving.ogg');
+var audioWin = new Audio('./LSQmusic/Anticipation-Win.ogg');
 var elem = document.documentElement;
 
 function openFullscreen() {
