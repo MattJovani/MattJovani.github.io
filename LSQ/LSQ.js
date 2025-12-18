@@ -40,7 +40,7 @@ var audioGreen = new Audio('./LSQmusic/Anticipation-Green.ogg');
 var audioBlue = new Audio('./LSQmusic/Anticipation-Blue.ogg');
 var audioSolving = new Audio('./LSQmusic/Anticipation-Solving.ogg');
 var audioWin = new Audio('./LSQmusic/Anticipation-Win.ogg');
-var playerSong = audioWin;
+var song = audioWin;
 var elem = document.documentElement;
 
 function openFullscreen() {
@@ -53,7 +53,7 @@ function openFullscreen() {
   }
   document.getElementById('enterFullscreen').style.display = 'none';
 document.getElementById('exitFullscreen').style.display = 'inline';
-playMusic(audioTitle); 
+playMusic(song); 
 }
 
 function closeFullscreen(){
@@ -207,6 +207,7 @@ newPrompt();
 }
 
 function newPrompt(){
+   song.currentTime = 0;
    playerTurn ++;
    if(playerTurn > 4){
       playerTurn = 1;
@@ -214,22 +215,22 @@ function newPrompt(){
    switch(playerTurn){
       case 1:
          player = 'yellow';
-         playerSong = audioYellow;
+         song = audioYellow;
          isColorPlaying('yellow');
          break;
       case 2:
          player = 'blue';
-         playerSong = audioBlue;
+         song = audioBlue;
          isColorPlaying('blue');
          break;
       case 3:
          player = 'red';
-         playerSong = audioPink;
+         song = audioPink;
          isColorPlaying('red');
          break;
       case 4:
          player = 'green';
-         playerSong = audioGreen;
+         song = audioGreen;
          isColorPlaying('green');
          break;       
    }
@@ -254,10 +255,10 @@ function newPrompt(){
       case 9:
       case 10:
          time = phraseTime;
-         playerSong = audioSolving;
+         song = audioSolving;
          break;
 }
-   playMusic(playerSong);
+   playMusic(song);
    pause = false;
 }
 
