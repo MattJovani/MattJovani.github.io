@@ -32,6 +32,14 @@ var level2 = [];
 var level3 = [];
 var level4 = [];
 
+var audioTitle = new Audio('./LSQmusic.Anticipation-Title.mp3');
+var audioSelect = new Audio('./LSQmusic.Anticipation-Select.mp3');
+var audioYellow = new Audio('./LSQmusic.Anticipation-Yellow.mp3');
+var audioPink = new Audio('./LSQmusic.Anticipation-Pink.mp3');
+var audioGreen = new Audio('./LSQmusic.Anticipation-Green.mp3');
+var audioBlue = new Audio('./LSQmusic.Anticipation-Blue.mp3');
+var audioSolving = new Audio('./LSQmusic.Anticipation-Solving.mp3');
+var audioWin = new Audio('./LSQmusic.Anticipation-Win.mp3');
 var elem = document.documentElement;
 
 function openFullscreen() {
@@ -56,6 +64,10 @@ function closeFullscreen(){
   }
   document.getElementById('exitFullscreen').style.display = 'none';
 document.getElementById('enterFullscreen').style.display = 'inline';
+}
+
+function playMusic(music){
+   music.play();
 }
 
 function startGame(){
