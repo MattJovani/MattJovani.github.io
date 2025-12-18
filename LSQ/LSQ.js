@@ -1,5 +1,5 @@
 var time = 0;
-var wordTime = 22;
+var wordTime = 25;
 var phraseTime = 35;
 var pause = true;
 var newWord;
@@ -51,7 +51,8 @@ function openFullscreen() {
     elem.msRequestFullscreen();
   }
   document.getElementById('enterFullscreen').style.display = 'none';
-document.getElementById('exitFullscreen').style.display = 'inline';  
+document.getElementById('exitFullscreen').style.display = 'inline';
+playMusic(audioTitle); 
 }
 
 function closeFullscreen(){
@@ -64,10 +65,6 @@ function closeFullscreen(){
   }
   document.getElementById('exitFullscreen').style.display = 'none';
 document.getElementById('enterFullscreen').style.display = 'inline';
-}
-
-function playTitleMusic(){
-   audioTitle.play();
 }
 
 function playMusic(music){
@@ -216,18 +213,22 @@ function newPrompt(){
    switch(playerTurn){
       case 1:
          player = 'yellow';
+         playerSong = audioYellow;
          isColorPlaying('yellow');
          break;
       case 2:
          player = 'blue';
+         playerSong = audioBlue;
          isColorPlaying('blue');
          break;
       case 3:
          player = 'red';
+         playerSong = audioPink;
          isColorPlaying('red');
          break;
       case 4:
          player = 'green';
+         playerSong = audioGreen;
          isColorPlaying('green');
          break;       
    }
@@ -252,8 +253,10 @@ function newPrompt(){
       case 9:
       case 10:
          time = phraseTime;
+         playerSong = audioSolving;
          break;
 }
+   playMusic(playerSong)
    pause = false;
 }
 
