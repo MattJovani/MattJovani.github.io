@@ -208,6 +208,7 @@ newPrompt();
 
 function newPrompt(){
    song.currentTime = 0;
+   song.pause();
    playerTurn ++;
    if(playerTurn > 4){
       playerTurn = 1;
