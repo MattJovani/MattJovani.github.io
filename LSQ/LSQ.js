@@ -257,7 +257,7 @@ function newPrompt(){
          playerSong = audioSolving;
          break;
 }
-   playMusic(playerSong)
+   playMusic(playerSong);
    pause = false;
 }
 
