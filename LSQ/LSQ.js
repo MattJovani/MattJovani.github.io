@@ -66,6 +66,10 @@ function closeFullscreen(){
 document.getElementById('enterFullscreen').style.display = 'inline';
 }
 
+function playTitleMusic(){
+   audioTitle.play();
+}
+
 function playMusic(music){
    music.play();
 }
