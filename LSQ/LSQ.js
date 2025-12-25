@@ -1,6 +1,6 @@
 var time = 0;
-var wordTime = 25;
-var phraseTime = 35;
+var wordTime = 23;
+var phraseTime = 33;
 var pause = true;
 var newWord;
 var player = 'yellow';
@@ -180,15 +180,34 @@ function rightAnswer(){
       }
 }
 
+function randomLetter() {
+  // Generate a random number between 0 and 25 (inclusive)
+  const randomNum = Math.floor(Math.random() * 26);
+  // Add 65 (ASCII for 'A') to get a number between 65 and 90
+  const asciiCode = 65 + randomNum;
+  // Convert the ASCII code to a character
+  return String.fromCharCode(asciiCode);
+}
+
+function generatePassword(){
+   let pw;
+   pw = randomLetter() + Math.floor(Math.random()*10) + randomLetter() + '<br>' + randomLetter() + Math.floor(Math.random() * (99 - 10 + 1)+10) + randomLetter() + '<br>' + randomLetter() + Math.floor(Math.random() * (999 - 100 + 1)+100) + randomLetter() + '<br>' + randomLetter() + Math.floor(Math.random() * (9999 - 1000 + 1)+1000)  + randomLetter();
+   document.getElementById('wifiPassword').innerHTML = pw;
+}
+
 function openFuelPopup(){
    if(document.getElementById('fuelPopup').style.display !== 'grid'){
-   document.getElementById('fuelPopup').style.display = 'grid';
+generatePassword();      document.getElementById('fuelPopup').style.display = 'grid';
 document.getElementById('wrongButton').disabled = true;
 document.getElementById('rightButton').disabled = true;
+document.getElementById('prompt').style.display = 'none';
+document.getElementById('stealMsg').style.display = 'inline';
 } else {
    document.getElementById('fuelPopup').style.display = 'none';
 document.getElementById('wrongButton').disabled = false;
 document.getElementById('rightButton').disabled = false;
+document.getElementById('prompt').style.display = 'inline';
+document.getElementById('stealMsg').style.display = 'none';
 }
 }
 
@@ -203,6 +222,8 @@ document.getElementById(color+'Car').style.opacity = 0.8;
 document.getElementById('wrongButton').disabled = false;
 document.getElementById('rightButton').disabled = false;
 document.getElementById(player+'Steal').disabled = false;
+document.getElementById('prompt').style.display = 'inline';
+document.getElementById('stealMsg').style.display = 'none';
 newPrompt();
 }
 
@@ -423,6 +444,7 @@ var redColors = [ "red1", "red2", "red3", "red4" ];
 var greenColors = [ "green1", "green2", "green3", "green4" ];
 var stopIndex = 0;
 var lastClass = blueColors[0];
+
 window.setInterval(function() {
     let colors;
     stopIndex++;

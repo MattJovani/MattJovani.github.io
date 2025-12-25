@@ -329,6 +329,14 @@ input[type="checkbox"]:not(:checked),input[type="checkbox"]:checked{
    max-width: 72%;
    justify-self: center;
 }
+
+#stealMsg{
+   display: none;
+}
+
+#wifiPassword{
+   font-size: 30px;
+}
    
 #endPopup{
    display: none;
