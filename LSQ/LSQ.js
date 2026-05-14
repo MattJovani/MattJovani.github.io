@@ -1,8 +1,13 @@
 var time = 0;
+var innerTime = 60;
 var wordTime = 23;
 var phraseTime = 33;
 var pause = true;
 var newWord;
+var wordOne;
+var wordTwo;
+var wordThree;
+var wordFour;
 var player = 'yellow';
 var playerTurn = 1;
 var numberOfPlayers = 4;
@@ -42,6 +47,14 @@ var audioSolving = new Audio('./LSQmusic/Anticipation-Solving.ogg');
 var audioWin = new Audio('./LSQmusic/Anticipation-Win.ogg');
 var song = audioWin;
 var elem = document.documentElement;
+
+var yValues = [0, 0, 0, 0];
+const barColors = [
+  'yellow',
+  'dodgerblue',
+  'orangered',
+  'chartreuse',
+];
 
 function openFullscreen() {
   if (elem.requestFullscreen) {
@@ -147,6 +160,7 @@ function togglePlayers(){
       document.getElementById(color+'Car').style.visibility = 'hidden';
       document.getElementById(color+'Package').style.opacity = '0.2';
       document.getElementById(color+'Steal').disabled = true;
+      document.getElementById(color+'Button').style.visibility = 'hidden';
       }
    }
 }
@@ -191,7 +205,7 @@ function randomLetter() {
 
 function generatePassword(){
    let pw;
-   pw = randomLetter() + Math.floor(Math.random()*10) + randomLetter() + '<br>' + randomLetter() + Math.floor(Math.random() * (99 - 10 + 1)+10) + randomLetter() + '<br>' + randomLetter() + Math.floor(Math.random() * (999 - 100 + 1)+100) + randomLetter() + '<br>' + randomLetter() + Math.floor(Math.random() * (9999 - 1000 + 1)+1000)  + randomLetter();
+   pw = '<br>' + randomLetter() + Math.floor(Math.random() * (9999 - 1000 + 1)+1000)  + randomLetter();
    document.getElementById('wifiPassword').innerHTML = pw;
 }
 
@@ -230,6 +244,35 @@ newPrompt();
 function newPrompt(){
    song.currentTime = 0;
    song.pause();
+   increasePlayerTurn();
+   newWord = getWord();
+   document.getElementById('prompt').innerHTML = newWord;
+   document.getElementById('crayon').style.filter = window[player+'Crayon'];
+   document.getElementById('crayon').style.transform = crayonPosition[window[player+'Score']]; document.getElementById(player+'Steal').disabled = true;
+   document.getElementById('fuel').disabled = true;
+   switch(window[player+'lvl']){
+      case 0:
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+         time = wordTime;
+         break;
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+      case 10:
+         time = phraseTime;
+         song = audioSolving;
+         break;
+}
+   playMusic(song);
+   pause = false;
+}
+
+function increasePlayerTurn(){
    playerTurn ++;
    if(playerTurn > 4){
       playerTurn = 1;
@@ -256,37 +299,12 @@ function newPrompt(){
          isColorPlaying('green');
          break;       
    }
-   newWord = getWord();
-   document.getElementById('prompt').innerHTML = newWord;
    document.body.style.backgroundImage = window[player+'Turn'];
-   document.getElementById('crayon').style.filter = window[player+'Crayon'];
-   document.getElementById('crayon').style.transform = crayonPosition[window[player+'Score']]; document.getElementById(player+'Steal').disabled = true;
-   document.getElementById('fuel').disabled = true;
-   switch(window[player+'lvl']){
-      case 0:
-      case 1:
-      case 2:
-      case 3:
-      case 4:
-      case 5:
-         time = wordTime;
-         break;
-      case 6:
-      case 7:
-      case 8:
-      case 9:
-      case 10:
-         time = phraseTime;
-         song = audioSolving;
-         break;
-}
-   playMusic(song);
-   pause = false;
 }
 
 function isColorPlaying(color){
    if(!document.getElementById(color+'PlayerCheck').checked)
-   newPrompt();
+   increasePlayerTurn();
 }
 
 function getWord(){
@@ -438,6 +456,119 @@ function restart(){
 document.styleSheets[0].cssRules[2].style.display = 'none';
 }
 
+function startSntce(){
+checkChecked();
+togglePlayers();
+newChart();
+playerTurn = Math.floor(Math.random()*4+1);
+newSntce();
+document.getElementById('sntceContainer').style.display = 'grid'; document.getElementById('includePopup').style.display = 'none';
+document.getElementById('popupContainer').style.display = 'none';
+document.getElementById('mainArea').style.display = 'none';
+document.styleSheets[0].cssRules[3].style.opacity = '1';
+document.getElementById('packageHeader').style.display = 'none';
+}
+
+function newSntce(){
+   song.currentTime = 0;
+   song.pause();
+   document.getElementById(player+'Button').disabled = true;
+   increasePlayerTurn();
+   placeSntceWords(); document.getElementById(player+'Button').disabled = false;
+   playMusic(song);
+   pause = false;
+   innerTime = 60;   document.getElementById('innerTimer').innerHTML = innerTime;
+}
+
+function placeSntceWords(){
+   document.getElementById('word1').innerHTML = getSntceWord(1);
+   document.getElementById('word2').innerHTML = getSntceWord(1);
+   document.getElementById('word3').innerHTML = getSntceWord(2);
+   document.getElementById('word4').innerHTML = getSntceWord(2);
+   if(document.getElementById('word1').innerHTML==document.getElementById('word2'). innerHTML||document.getElementById('word3').innerHTML==document.getElementById('word4').innerHTML){
+      placeSntceWords();
+   }
+}
+
+function getSntceWord(oneORtwo){
+   let selection = 'skip';
+   if(oneORtwo==1){
+   selection = level1[Math.floor(Math.random()*level1.length)];
+   }else{
+     selection = level2[Math.floor(Math.random()*level2.length)]; 
+   }
+   return selection;
+}
+
+function newChart(){
+   new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+      
+    }]
+  },
+});
+}
+
+function yellowPlusX(){
+   var inc = checkCorrect();
+   yValues[0]+= inc;
+   sntcePercent();
+   newChart();
+   newSntce();
+}
+
+function bluePlusX(){
+   var inc = checkCorrect();
+   yValues[1]+= inc;
+   sntcePercent();
+   newChart();
+   newSntce();
+}
+
+function redPlusX(){
+   var inc = checkCorrect();
+   yValues[2]+= inc;
+   sntcePercent();
+   newChart();
+   newSntce();
+}
+
+function greenPlusX(){
+   var inc = checkCorrect();
+   yValues[3]+= inc;
+   sntcePercent();
+   newChart();
+   newSntce();
+}
+
+function sntcePercent(){
+   var percentTotal = yValues[0]+yValues[1]+yValues[2]+yValues[3];
+   if(percentTotal!=0){
+      document.getElementById('yellowButton').innerHTML = Math.round(yValues[0] / percentTotal * 100) + '%';
+      document.getElementById('blueButton').innerHTML = Math.round(yValues[1] / percentTotal * 100) + '%';
+      document.getElementById('redButton').innerHTML = Math.round(yValues[2] / percentTotal * 100) + '%';
+      document.getElementById('greenButton').innerHTML = Math.round(yValues[3] / percentTotal * 100) + '%';
+   }
+}
+
+function checkCorrect(){
+   var increase = 0;
+   var cboxes = document.querySelectorAll('input[class="chckbxs"]');
+   cboxes.forEach(function(tick){
+      if(tick.checked){
+         increase ++;
+         }
+      })
+   cboxes.forEach(function(tick){
+      tick.checked = false;
+      })
+   return increase;
+}
+
 var yellowColors = [ "yellow1", "yellow2", "yellow3", "yellow4" ];
 var blueColors = [ "blue1", "blue2", "blue3", "blue4" ];
 var redColors = [ "red1", "red2", "red3", "red4" ];
@@ -490,16 +621,20 @@ tickboxes.forEach(function(check){
       }
    })
    if(oneTick > 0 && twoTick > 1){
-      document.getElementById('startButton').disabled = false;   
+      document.getElementById('startButton').disabled = false;
+      document.getElementById('sntceButton').disabled = false;   
       } else {
-document.getElementById('startButton').disabled = true;         
+document.getElementById('startButton').disabled = true;
+document.getElementById('sntceButton').disabled = true;         
       }
       oneTick = 0;
       twoTick = 0;
   });
 });
 
-window.setInterval(function(){
+startButton.addEventListener('click',()=> {
+   
+   window.setInterval(function(){
    if(!pause){
    time--;
    document.getElementById('timer').innerHTML = time;
@@ -509,6 +644,19 @@ window.setInterval(function(){
       document.getElementById('fuel').disabled = false;
    }
 }, 1000);
+});
+
+sntceButton.addEventListener('click',function() { 
+   window.setInterval(function(){
+   if(!pause){
+   innerTime--;
+   document.getElementById('innerTimer').innerHTML = innerTime;
+   }
+   if(innerTime <= 0){
+      pause = true;
+   }
+}, 1000);
+});
 
 var truckPosition = {
    0: '2.3%',

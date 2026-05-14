@@ -854,7 +854,7 @@ const chapter5 = [
       Je dois aller chercher mes amis, ils m'attendent.\
       </span>", <!-- ↑7 -->
       "<span style='font-size: 20px;'>\
-      Il y a un addicent au coin de ma rue!\
+      Il y a un accident au coin de ma rue!\
       </span>", <!-- ↑8 -->
       "<span style='font-size: 20px;'>\
       Je n'aime pas voyager loin.\

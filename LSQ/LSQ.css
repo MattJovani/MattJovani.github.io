@@ -21,8 +21,6 @@ header{
    
 }
 
-
-
 footer{
    display: none;
    position: fixed;
@@ -33,8 +31,6 @@ footer{
 body{
    background-image: radial-gradient(circle, goldenrod, white);
 }
-
-
 
 #popupContainer{
    display: grid;
@@ -125,16 +121,20 @@ input[type="checkbox"]:not(:checked),input[type="checkbox"]:checked{
    text-align: center;
 }
 
-#startButton{
-   background-color: green;
-   color: white;
+#startButton, #sntceButton{
+   background-image: conic-gradient(yellow 25%, cornflowerblue 25%, cornflowerblue 50%, orangered 50%, orangered 75%, limegreen 75%);
    width: 40%;
    height: 40%;
 }
 
-#startButton:disabled{
+#sntceButton{
+   border-radius: 50%;
+}
+
+#startButton:disabled, #sntceButton:disabled{
    opacity: 0.2;
 }
+
 
 #scoregrid{
    display: grid;
@@ -478,6 +478,10 @@ input[type="checkbox"]:not(:checked),input[type="checkbox"]:checked{
    font-size: 333%;
 }
 
+.packagesOFF{
+   display: none;
+}
+
 #yellowPackage{
    visibility: hidden;
    filter: hue-rotate(40deg) brightness(1.4) opacity(1);
@@ -506,4 +510,67 @@ input[type="checkbox"]:not(:checked),input[type="checkbox"]:checked{
    font-size: 50px;
    transform: rotate(25deg);
    opacity: 0;
+}
+
+#sntceContainer{
+   margin-top: 8vh;
+   display: none;
+   grid-template-columns: 30% 60% 10%;
+   justify-self: center;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 300px;
+}
+
+#myChart{
+   width: 100%;
+   max-width: 600px;
+}
+
+#innerTimer{
+   width: 100%;
+   height: 40px;
+   position: absolute;
+   top: 57%;
+   left: 9%;
+   margin-top:-20px;
+   line-height:19px;
+   text-align: center;
+   z-index: 999;
+   font-size: 36px;
+}
+
+#sntceColorButtons{  
+   display: grid;  
+   justify-content: end;
+   gap: 10px;
+   height: 80%;
+   width: 30%;
+}
+
+#yellowButton{
+   background-color: yellow;
+   width: 64px;
+}
+
+#blueButton{
+   background-color: dodgerblue;
+}
+
+#redButton{
+   background-color: orangered;
+}
+
+#greenButton{
+   background-color: chartreuse;
+}
+
+#word1, #word2, #word3, #word4{
+   font-size: 24px;
+}
+
+label:has(input[type="checkbox"]:checked):has(input[class="chckbxs"]){
+   border: 5px solid green;
+   border-radius: 50%;
 }
