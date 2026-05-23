@@ -6,5 +6,28 @@
  <a href="./AgentPhoenix/Emmas30th.html"><img src="AgentPhoenix/newspaper.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" ></a> 
  
  <a href="./PokemonCries/PokemonCries.html"><img src="Images/PokemonCriesImage.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity" ></a>
+ 
+<button onclick="getLocation()">GeoLocation</button 
 
 </html>
+<script>
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    window.location="https://mattjovani.github.io/AgentPhoenix/Emmas30th.html"
+  }
+}
+
+function success(position) {
+  if(position.coords.latitude==position.coords.latitude && position.coords.longitude==position.coords.longitude){
+     window.location="https://mattjovani.github.io/LSQ/LSQ.html"
+  } else {
+     window.location="https://mattjovani.github.io/PokemonCries/PokemonCries.html"
+  }
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
