@@ -3,19 +3,24 @@
 </body>
 </html>
 <script>
+var c1Lat = 45.538;
+var c1Lon = -73.550;
+var superCLat = 45.525;
+var superCLon = -73.550;
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success, error);
   } else { 
-    window.location="https://mattjovani.github.io/AgentPhoenix/Emmas30th.html"
+    window.location="https://mattjovani.github.io/AgentPhoenix/Emmas30th.html";
   }
 }
 
 function success(position) {
-  if(Math.floor(position.coords.latitude*100)/100== 45.54 && Math.floor(position.coords.longitude*100)/100==-73.54){
-     window.location="https://docs.google.com/document/d/1L9qv8rD1v9fWatf_ph-Z9D_RqQuHtk-UWM0Hmyky78M/edit?usp=drivesdk"
+  if(position.coords.latitude.toFixed(3)== c1Lat && position.coords.longitude.toFixed(3)== c1Lon){
+     window.location="https://docs.google.com/document/d/1L9qv8rD1v9fWatf_ph-Z9D_RqQuHtk-UWM0Hmyky78M/edit?usp=drivesdk";
   } else {
-     window.location="https://docs.google.com/document/d/1kI3wvw9Vat3h4Zdbs-0UwvTBL5O1mAoQg8fIuY9hg-o/edit?usp=drivesdk"
+  alert("latitude= " + position.coords.latitude.toFixed(3) + " → " + c1Lat + "\nlongitude= " + position.coords.longitude.toFixed(3) + " → " + c1Lon);   window.location="https://docs.google.com/document/d/1kI3wvw9Vat3h4Zdbs-0UwvTBL5O1mAoQg8fIuY9hg-o/edit?usp=drivesdk";
+     
   }
 }
 
