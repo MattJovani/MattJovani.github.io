@@ -1,30 +1,12 @@
 <html>
-<body onload="getLocation()">
+<body onload="checkProximity(targetPosition, allowedRadiusKm)">
 </body>
 </html>
 <script>
-var c1Lat = 45.538;
-var c1Lon = -73.55;
-var superCLat = 45.525;
-var superCLon = -73.550;
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, error);
-  } else { 
-    window.location="https://mattjovani.github.io/AgentPhoenix/Emmas30th.html";
-  }
-}
-
-function success(position) {
-  if(position.coords.latitude.toFixed(3)== c1Lat && position.coords.longitude.toFixed(3)== c1Lon){
-     window.location="https://docs.google.com/document/d/1L9qv8rD1v9fWatf_ph-Z9D_RqQuHtk-UWM0Hmyky78M/edit?usp=drivesdk";
-  } else {
-  alert("latitude= " + position.coords.latitude.toFixed(3) + " → " + c1Lat + "\nlongitude= " + position.coords.longitude.toFixed(3) + " → " + c1Lon);   window.location="https://docs.google.com/document/d/1kI3wvw9Vat3h4Zdbs-0UwvTBL5O1mAoQg8fIuY9hg-o/edit?usp=drivesdk";
-     
-  }
-}
-
-function error() {
-  alert("Sorry, no position available.");
-}
+const targetPosition = {
+   lat: 45.4921213,
+   lng: -73.5629746
+   }; 
+const allowedRadiusKm = 0.1;
 </script>
+<script src="Alecs30th.js"></script>
