@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="../AgentPhoenix/spinnerfiles/spinner.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="../AgentPhoenix/spinnerfiles/spinner.js"></script>
+</head>
+
+<body>
+<p style="font-size: 50px">
+What was our landline number at 6601 37th avenue Laval Ouest?
+</p>
+<p style="font-size: 45px"id="phone">(555)555-5555</p>
+<div id="ticker">
+  <span style="font-size: 300px">(</span>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <span style="font-size: 300px">)</span>
+  <br>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <span style="font-size: 300px">-</span>
+  <br>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div class="rotator"></div>
+  <div id="result"></div>
+</div>
+</body>
+
+<script>
+var resultElem = document.getElementById('result');
+var observer = new MutationObserver(function(mutations) {
+     mutations.forEach(function(mutation) {
+       verifyAnswer();
+     });
+ });
+ var config = {
+      subtree:true, 
+      attributes: true, 
+      childList: true, 
+      characterData: true
+ };
+ observer.observe(resultElem, config);
+</script>
+
+</html>
