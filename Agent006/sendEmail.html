@@ -4,19 +4,19 @@
 </html>
 <script>
 function sendEmail(){
-   alert('step 1');
+   alert('gmail');
 let nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-  service: 'yahoo',
+  service: 'gmail',
   auth: {
-    user: 'thehandler006@yahoo.com',
+    user: 'thehandler006@gmail.com',
     pass: '4g3ntPh03n1x'
   }
 });
 
 let mailOptions = {
-  from: 'thehandler006@yahoo.com',
+  from: 'thehandler006@gmail.com',
   to: 'fidoboe@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
