@@ -4,7 +4,7 @@
 </html>
 <script>
 function sendEmail(){
-   console.log('step 1');
+   alert('step 1');
 let nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
@@ -24,9 +24,9 @@ let mailOptions = {
 
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {
-    console.log(error);
+    alert(error);
   } else {
-    console.log('Email sent: ' + info.response);
+    alert('Email sent: ' + info.response);
   }
 });
 }
